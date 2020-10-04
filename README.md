@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img alt="MSFS2020 Logo" src="msfs2020logo.png" width=500>
+  <img alt="MSFS2020" src="logo.png">
 </h4>
 
 ***This is the hub for small UI mod's for game MSFS2020.***
