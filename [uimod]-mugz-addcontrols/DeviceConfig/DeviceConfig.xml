@@ -1,0 +1,48 @@
+<?xml version= "1.0" encoding= "utf-8" ?>
+<DeviceConfig>
+	<Device ProductId="0x1900" TextureFolder="H.Alpha Flight Control" />					<!-- Alpha Flight Controls -->
+	<Device ProductId="0x884B" TextureFolder="Logitech G513"					Priority="-10" />	<!-- Keyboard -->
+	<Device ProductId="0x378D" TextureFolder="Logitech G502 Hero"					Priority="-9" />	<!-- Mouse -->
+	<Device ProductId="0xC215" TextureFolder="Saitek Extreme 3D Pro Stick" />				<!-- Logitech Extreme 3D (NB: Saitek = Logitech) -->
+	<Device ProductId="0xA2AE" TextureFolder="Saitek Flight Instrument Panel" />			<!-- Saitek Flight Instrument Panel -->
+	<Device ProductId="0x0D06" TextureFolder="Saitek Flight Multi Panel" />					<!-- Saitek Flight Multi Panel -->
+	<Device ProductId="0x0D05" TextureFolder="Saitek Flight Radio Panel" />					<!-- Saitek Flight Radio Panel -->
+	<Device ProductId="0x0D67" TextureFolder="Saitek Flight Switch Panel" />				<!-- Saitek Flight Switch Panel -->
+	<Device ProductId="0x0763" TextureFolder="Saitek Pro Flight Rudder Pedals" />			<!-- Saitek Pro Flight Rudder Pedals -->
+	<Device ProductId="0x0C2D" TextureFolder="Saitek Pro Flight Throttle Quadrant" />		<!-- Saitek Pro Flight Quadrant -->
+	<Device ProductId="0x2221" TextureFolder="Saitek Pro Flight X-56 Rhino Stick" />		<!-- Saitek Pro Flight X-56 Rhino Stick -->
+	<Device ProductId="0xA221" TextureFolder="Saitek Pro Flight X-56 Rhino Throttle" />		<!-- Saitek Pro Flight X-56 Rhino Throttle -->
+	<Device ProductId="0x0BAC" TextureFolder="Saitek Pro Flight Yoke" />					<!-- Saitek Pro Flight Yoke -->
+	<Device ProductId="0x075C" TextureFolder="Saitek X52 Flight Control System" />			<!-- Saitek X52 Flight Control System -->
+	<Device ProductId="0x0762" TextureFolder="Saitek X52 Pro Flight Control System" />		<!-- Saitek X52 Pro Flight Control System -->
+	<Device ProductId="0xB68F" TextureFolder="T-Pendular-Rudder" />							<!-- -Pendular-Rudder -->
+	<Device ProductId="0xB678" TextureFolder="T-Rudder" />									<!-- T.Flight Rudder Pedals -->
+	<Device ProductId="0xB679" TextureFolder="T-Rudder" />									<!-- T-Rudder -->
+	<Device ProductId="0xB10A" TextureFolder="T.16000M" />									<!-- T.16000M -->
+	<Device ProductId="0xB67B" TextureFolder="T.Flight Hotas 4" />							<!-- T.Flight Hotas 4 -->
+	<Device ProductId="0xB68D" TextureFolder="T.Flight Hotas One" />						<!-- T.Flight Hotas One -->
+	<Device ProductId="0xB108" TextureFolder="T.Flight Hotas X" />							<!-- T.Flight Hotas X -->
+	<Device ProductId="0xB106" TextureFolder="T.Flight Stick X" />							<!-- T.Flight Stick X -->
+	<Device ProductId="0x0402" TextureFolder="T.Hotas Warthog Joystick" />					<!-- T.Hotas Warthog Joystick -->
+	<Device ProductId="0x0404" TextureFolder="T.Hotas Warthog Throttle" />					<!-- T.Hotas Warthog Throttle -->
+	<Device ProductId="0xB687" TextureFolder="TWCS Throttle" />								<!-- TWCS Throttle -->
+	<Device ProductId="0x0DA3" TextureFolder="V.Ruddo Plus" />								<!-- VirtualFly - RUDDO+ -->
+	<Device ProductId="0x0DA1" TextureFolder="V.TQ3+" />									<!-- VirtualFly - TQ3+ -->
+	<Device ProductId="0x0DA2" TextureFolder="V.TQ6" />										<!-- VirtualFly - TQ6+ -->
+	<Device ProductId="0x0DA4" TextureFolder="V.V3rnio TPM" />								<!-- VF - TPM V3RNIO -->
+	<Device ProductId="0x0DA0" TextureFolder="V.Yoko The Yoke Plus" />						<!-- VirtualFly - YOKO+ -->
+	<Device ProductId="0x0001" TextureFolder="XInput Gamepad"			Priority="-1" />	<!-- XInput Gamepad -->
+	<!-- Devices without images -->
+	<Device ProductId="0x4843" TextureFolder="Unknown Device" />							<!-- Custom DR400 cockpit, BU0836X Interface -->
+	<Device ProductId="0x3E20" TextureFolder="Unknown Device" />							<!-- Custom DR400 cockpit, BU0836X Interface -->
+	<!-- T.A320 -->
+	<Device ProductId="0x0405" TextureFolder="T.A320 Pilot" />								<!-- T.A320 Pilot (Left handed) -->
+	<Device ProductId="0x0406" TextureFolder="T.A320 Copilot" />							<!-- T.A320 Copilot (Right handed) -->
+	<Device ProductId="0x0407" TextureFolder="T.A320 Quadrant throttle" />					<!-- Airbus T-A320 Quadrant throttle -->
+	<!-- TrackIR -->
+	<Device ProductId="0x%41X" TextureFolder="TrackIR" />
+	<!-- VPC -->
+	<Device ProductId="0x2046" TextureFolder="VPC Stick MT-50CM" />
+	<Device ProductId="0x2054" TextureFolder="VPC Throttle MT-50CM2" />
+	<Device ProductId="0x2065" TextureFolder="VPC Rudder Pedals" />
+</DeviceConfig>
