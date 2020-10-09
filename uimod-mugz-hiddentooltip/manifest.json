@@ -6,10 +6,10 @@
     }
   ],
   "content_type": "CUSTOM",
-  "title": " [UIMOD] Hide ToolTip",
+  "title": " [UIMOD] Hidden ToolTip",
   "manufacturer": "",
   "creator": "Mugz",
-  "package_version": "0.0.1",
+  "package_version": "0.0.2",
   "minimum_game_version": "1.7.13",
   "release_notes": {
     "neutral": {
