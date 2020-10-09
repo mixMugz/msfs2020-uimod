@@ -1,0 +1,273 @@
+﻿/** This mixin makes a single line element fit exactly on the Roboto font for easier integration. */
+igm-waypoint-3d {
+  --width: calc(var(--screenHeight) * (400px / 1080));
+  --totalHeight: calc(var(--screenHeight) * (105px / 1080));
+  --iconsize: calc(var(--screenHeight) * (36px / 1080));
+  --defaultBackgroundColorTop: white;
+  --defaultBackgroundColorBottom: #2ECC71;
+  --userBackgroundColorTop: var(--defaultBackgroundColorTop);
+  --userBackgroundColorBottom: var(--defaultBackgroundColorBottom);
+  --textColor: var(--enabledColor);
+  --backgroundColor: transparent;
+  --statusColor: transparent;
+  --InfosHeight: calc(var(--screenHeight) * (65px / 1080));
+  --statusHeight: 0px;
+  --textDropShadow: var(--textShadow);
+  --shadow-color: var(--backgroundColorPanel); /*#424242;*/
+  display: block;
+  width: var(--width);
+  height: var(--totalHeight);
+  overflow: hidden;
+  position: relative;
+  /*.Icon {
+    --background-image: url("/icons/Waypoints/Backgrounds/ICON_MAP_ENABLE.svg");
+  }*/
+}
+igm-waypoint-3d.active {
+  --textColor: var(--enabledColor);
+  --backgroundColor: transparent;
+  --statusHeight: 0px;
+}
+igm-waypoint-3d.active .Icon {
+  --background-image: url("/icons/Waypoints/Backgrounds/ICON_MAP_ENABLE.svg");
+}
+igm-waypoint-3d.inactive {
+  --statusHeight: 0px;
+}
+igm-waypoint-3d.inactive .Icon {
+  --background-image: url("/icons/Waypoints/Backgrounds/ICON_MAP_DISABLED.svg");
+}
+igm-waypoint-3d.completed {
+  --statusColor: var(--userBackgroundColorBottom);
+  --backgroundColor: var(--userBackgroundColorTop);
+  --textDropShadow: none;
+  --textColor: var(--enabledHoverColor);
+  --statusHeight: calc(var(--screenHeight) * (55px / 1080));
+}
+igm-waypoint-3d.completed .Icon {
+  --background-image: url("/icons/Waypoints/Backgrounds/ICON_MAP_VALIDATED.svg");
+}
+igm-waypoint-3d.completed .Icon .Image {
+  display: none;
+}
+igm-waypoint-3d.interactive {
+  --backgroundColor: white;
+  --textDropShadow: none;
+  --textColor: var(--enabledHoverColor);
+  --statusHeight: 0px;
+}
+igm-waypoint-3d.interactive .Icon {
+  --background-image: url("/icons/Waypoints/Backgrounds/ICON_MAP_OVER.svg");
+}
+igm-waypoint-3d.smallTextBox .Infos {
+  align-items: center;
+}
+igm-waypoint-3d.smallTextBox .Infos .Top {
+  width: auto;
+}
+igm-waypoint-3d .Infos {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: calc(var(--screenHeight) * (5px / 1080));
+}
+igm-waypoint-3d .Infos .Top {
+  height: var(--InfosHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--textColor);
+}
+igm-waypoint-3d .Infos .Top .Separator {
+  display: block;
+  width: calc(var(--screenHeight) * (2px / 1080));
+  height: 40%;
+  background-color: var(--textColor);
+  box-shadow:
+   -1px -1px 0 var(--shadow-color),
+    0   -1px 0 var(--shadow-color),
+    1px -1px 0 var(--shadow-color),
+    1px  0   0 var(--shadow-color),
+    1px  1px 0 var(--shadow-color),
+    0    1px 0 var(--shadow-color),
+   -1px  1px 0 var(--shadow-color),
+   -1px  0   0 var(--shadow-color);
+  margin: 5px;
+}
+igm-waypoint-3d .Infos .Top .Name {
+  position: relative;
+  height: 100%;
+  max-width: 70%;
+  display: inline-flex;
+  align-items: center;
+  text-align: right;
+  box-align: right;
+  justify-content: flex-end;
+  text-shadow:
+   -1px -1px 0 var(--shadow-color),
+    0   -1px 0 var(--shadow-color),
+    1px -1px 0 var(--shadow-color),
+    1px  0   0 var(--shadow-color),
+    1px  1px 0 var(--shadow-color),
+    0    1px 0 var(--shadow-color),
+   -1px  1px 0 var(--shadow-color),
+   -1px  0   0 var(--shadow-color);
+}
+igm-waypoint-3d .Infos .Top .Name p {
+  color: var(--textColor);
+  line-height: 0.95em;
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+}
+igm-waypoint-3d .Infos .Top .Distance {
+  height: 100%;
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  box-align: left;
+  justify-content: flex-start;
+  text-shadow:
+   -1px -1px 0 var(--shadow-color),
+    0   -1px 0 var(--shadow-color),
+    1px -1px 0 var(--shadow-color),
+    1px  0   0 var(--shadow-color),
+    1px  1px 0 var(--shadow-color),
+    0    1px 0 var(--shadow-color),
+   -1px  1px 0 var(--shadow-color),
+   -1px  0   0 var(--shadow-color);
+}
+igm-waypoint-3d .Infos .Top .Distance p {
+  font-weight: 800;
+  color: var(--textColor);
+  line-height: 0.95em;
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+}
+igm-waypoint-3d .Infos .Status {
+  line-height: calc(var(--screenHeight) * (55px / 1080));
+  width: 100%;
+  transition: height ease-in-out 0.25s;
+  overflow: hidden;
+  height: var(--statusHeight);
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+  text-align: center;
+  font-family: var(--font);
+  background-color: var(--statusColor);
+  color: white;
+}
+igm-waypoint-3d .Icon {
+  width: var(--iconsize);
+  height: var(--iconsize);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: calc(var(--screenHeight) * (45px / 1080));
+}
+igm-waypoint-3d .Icon .Background {
+  --iconColor: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+igm-waypoint-3d .Icon .Image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }*/
+}
+igm-waypoint-3d .Altitude {
+  position: absolute;
+  top: calc(var(--screenHeight) * (78px / 1080));
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-size: calc(var(--screenHeight) * (16px / 1080));
+  font-family: var(--font);
+  text-shadow:
+   -1px -1px 0 var(--shadow-color),
+    0   -1px 0 var(--shadow-color),
+    1px -1px 0 var(--shadow-color),
+    1px  0   0 var(--shadow-color),
+    1px  1px 0 var(--shadow-color),
+    0    1px 0 var(--shadow-color),
+   -1px  1px 0 var(--shadow-color),
+   -1px  0   0 var(--shadow-color);
+}
+
+igm-waypoint-2d {
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  --iconSize: 55px;
+}
+igm-waypoint-2d .Icon {
+  --size: var(--iconSize);
+  position: absolute;
+  left: calc(50% - var(--size) * 0.5);
+  top: calc(50% - var(--size) * 0.5);
+  width: var(--size);
+  height: var(--size);
+  vertical-align: baseline;
+  background-image: url("/icons/Waypoints/Backgrounds/ICON_MAP_ENABLE.svg");
+}
+igm-waypoint-2d .Icon .Image {
+  width: 100%;
+  height: 100%;
+}
+igm-waypoint-2d .Distance {
+  position: absolute;
+  left: 0;
+  top: calc(50% + var(--iconSize) * 0.5);
+  line-height: 0.95em;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: var(--textDropShadow);
+}
+igm-waypoint-2d .ArrowContainer {
+  --size: 55px;
+  position: absolute;
+  left: calc(50% - var(--size) * 0.5);
+  top: calc(50% - var(--size) * 0.5);
+  width: var(--size);
+  height: var(--size);
+  transform-origin: center center;
+  transform: rotate(var(--angle));
+}
+igm-waypoint-2d .ArrowContainer .Arrow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  --iconColor: var(--enabledHoverColor);
+  background-color: transparent;
+  left: 70%;
+}
