@@ -11,10 +11,12 @@ class IGM_TrafficElement_3D extends InGameMarkerBaseElement {
         this.m_dataItems = [];
         this.KeyUpHandler = (event) => {
             if (event.keyCode == 123) {
-                this.style.display = 'none';
+                this.m_name.style.display = 'none';
+                this.m_dataElem.style.display = 'none';
             }
             if (event.keyCode == 122) {
-                this.style.display = '';
+                this.m_name.style.display = '';
+                this.m_dataElem.style.display = '';
             }
         };
     }
