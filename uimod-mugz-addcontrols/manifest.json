@@ -9,7 +9,7 @@
   "title": " [UIMOD] Additional Controls",
   "manufacturer": "",
   "creator": "Mugz",
-  "package_version": "0.0.1",
+  "package_version": "0.0.2",
   "minimum_game_version": "1.7.13",
   "release_notes": {
     "neutral": {
@@ -17,5 +17,5 @@
       "OlderHistory": ""
     }
   },
-  "total_package_size": "00000000000004420961"
+  "total_package_size": "00000000000005042242"
 }

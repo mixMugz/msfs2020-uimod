@@ -2,7 +2,7 @@
   "content": [
     {
       "path": "DeviceConfig/DeviceConfig.xml",
-      "size": 4241,
+      "size": 4275,
       "date": 132423197886644048
     },
     {
@@ -43,6 +43,11 @@
     {
       "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/layout.png",
       "size": 414515,
+      "date": 132423197886644048
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/MFG Crosswind V2/layout.png",
+      "size": 621050,
       "date": 132423197886644048
     },
     {
