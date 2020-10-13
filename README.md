@@ -1,3 +1,5 @@
+>Tested and work perfect with v.1.9.5.0 (update 4)
+
 <h4 align="center">
   <img alt="MSFS2020" src="logo.png">
 </h4>
@@ -5,9 +7,6 @@
 ***This is the hub for small UI mod's for game MSFS2020.***
 
 ---
-## Compatibility
-
->Tested and work perfect with v.1.9.5.0 (update 4)
 
 ## About MOD's
 
