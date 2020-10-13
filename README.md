@@ -5,6 +5,9 @@
 ***This is the hub for small UI mod's for game MSFS2020.***
 
 ---
+## Compatibility
+
+>Testd and work perfect with v.1.9.5.0 (update 4)
 
 ## About MOD's
 
