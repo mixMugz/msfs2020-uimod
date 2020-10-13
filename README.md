@@ -7,7 +7,7 @@
 ---
 ## Compatibility
 
->Testd and work perfect with v.1.9.5.0 (update 4)
+>Tested and work perfect with v.1.9.5.0 (update 4)
 
 ## About MOD's
 
