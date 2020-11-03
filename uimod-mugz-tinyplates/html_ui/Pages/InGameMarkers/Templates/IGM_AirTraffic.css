@@ -5,6 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --igm-block: block;
+  --igm-flex: flex;
+}
 igm-airtraffic-3d {
   /* Variables */
   --opacity: 0.8; /* Font transparency */
@@ -29,7 +33,7 @@ igm-airtraffic-3d {
   opacity: var(--opacity);
 }
 igm-airtraffic-3d .name {
-  display: block;
+  display: var(--igm-block);
   width: 100%;
   /* padding: calc(var(--scalefactor) * var(--screenHeight) * (2px / 2160)) 0 calc(var(--scalefactor) * var(--screenHeight) * (2px / 2160)) 0; */
   font-size: var(--font-size);
@@ -46,7 +50,7 @@ igm-airtraffic-3d .name {
    -1px  0   0 var(--shadow-color);
 }
 igm-airtraffic-3d .data {
-  display: flex;
+  display: var(--igm-flex);
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -56,7 +60,7 @@ igm-airtraffic-3d .data {
   opacity: 0;
 }
 igm-airtraffic-3d.detailed .data {
-  display: flex;
+  display: var(--igm-flex);
   opacity: var(--opacity);
 }
 igm-airtraffic-3d .data span {

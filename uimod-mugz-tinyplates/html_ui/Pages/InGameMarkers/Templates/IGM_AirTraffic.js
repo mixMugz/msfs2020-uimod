@@ -8,17 +8,21 @@ var AirTrafficDataType;
 class IGM_TrafficElement_3D extends InGameMarkerBaseElement {
     constructor() {
         super();
+        if (typeof this.igm_show === 'undefined') this.igm_show = true;
         this.m_dataItems = [];
         this.KeyUpHandler = (event) => {
             if (event.keyCode == 123) {
-                this.m_name.style.display = 'none';
-                this.m_dataElem.style.display = 'none';
+                if (this.igm_show) {
+                    document.documentElement.style.setProperty('--igm-block', 'none');
+                    document.documentElement.style.setProperty('--igm-flex', 'none');
+                    this.igm_show = false;
+                } else {
+                    document.documentElement.style.setProperty('--igm-block', 'block');
+                    document.documentElement.style.setProperty('--igm-flex', 'flex');
+                    this.igm_show = true;
+                }
             }
-            if (event.keyCode == 122) {
-                this.m_name.style.display = '';
-                this.m_dataElem.style.display = '';
-            }
-        };
+        }
     }
     get templateID() { return "IGM_AirTraffic_3D_Template"; }
     ;
