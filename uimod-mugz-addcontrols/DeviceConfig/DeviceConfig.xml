@@ -42,9 +42,9 @@
 	<!-- TrackIR -->
 	<Device ProductId="0x%41X" TextureFolder="TrackIR" />
 	<!-- VPC -->
-	<Device ProductId="0x2046" TextureFolder="VPC Stick MT-50CM" />
-	<Device ProductId="0x2054" TextureFolder="VPC Throttle MT-50CM2" />
-	<Device ProductId="0x2065" TextureFolder="VPC Rudder Pedals" />
+	<Device ProductId="0x412C" TextureFolder="VPC Stick MT-50CM" />
+	<Device ProductId="0x8190" TextureFolder="VPC Throttle MT-50CM2" />
+	<Device ProductId="0x01F4" TextureFolder="VPC Rudder Pedals" />
 	<!-- MFG -->
 	<Device ProductId="0x0A38" TextureFolder="MFG Crosswind V2" />
 </DeviceConfig>
