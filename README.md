@@ -38,7 +38,7 @@ Just remove those folders from `Community` folder.
 
 - Q: "How i can change shortcut key?"<br>A: "Change variable `var mKey = 8` in `uimod-mugz-hiddenui\html_ui\JS\common.js`. You can get the keycode on the website: https://keycode.info/
 
-- Q: "I don't like you tinynameplates mod, can i use another mod or selfmaded?"<br>A: 'Yes! [These](https://github.com/clompsy/msfs_nameplates) nameplates must also be compatible with `uimod-mugz-hiddenui`. You can put them instead `uimod-mugz-tinyplates`. For self maded just add in *IGM_AirTraffic.css* - :root definition and change *igm-airtraffic-3d* display style to *display: var(--tgl-flex);*
+- Q: "I don't like you tinynameplates mod, can i use another mod or selfmaded?"<br>A: 'Yes! [These](https://github.com/clompsy/msfs_nameplates) nameplates must also be compatible with **uimod-mugz-hiddenui**. You can put them instead **uimod-mugz-tinyplates**. For self maded just add in *IGM_AirTraffic.css* - :root definition and change *igm-airtraffic-3d* display style to *display: var(--tgl-flex);*
 
 - Q: "Is it compatible with the new version of the game?"<br>A: "Please! Always disable all mods before installing a new patch. Switch on with caution at your own risk. I do not exclude that my mods may not work correctly in the new version of the game. If the mod is not compatible, I will try to fix it as soon as possible."
 
