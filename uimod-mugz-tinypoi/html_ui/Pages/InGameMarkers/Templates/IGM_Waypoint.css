@@ -1,4 +1,8 @@
 ﻿/** This mixin makes a single line element fit exactly on the Roboto font for easier integration. */
+:root {
+  --tgl-block: block;
+  --tgl-flex: flex;
+}
 igm-waypoint-3d {
   --width: calc(var(--screenHeight) * (400px / 1080));
   --totalHeight: calc(var(--screenHeight) * (105px / 1080));
@@ -14,7 +18,7 @@ igm-waypoint-3d {
   --statusHeight: 0px;
   --textDropShadow: var(--textShadow);
   --shadow-color: var(--backgroundColorPanel); /*#424242;*/
-  display: block;
+  display: var(--tgl-block);
   width: var(--width);
   height: var(--totalHeight);
   overflow: hidden;
@@ -147,7 +151,7 @@ igm-waypoint-3d .Infos .Top .Distance {
 igm-waypoint-3d .Infos .Top .Distance p {
   font-weight: 800;
   color: var(--textColor);
-  line-height: 0.95em;
+  line-height: 10.95em;
   font-size: calc(var(--screenHeight) * (18px / 1080));
 }
 igm-waypoint-3d .Infos .Status {
@@ -218,7 +222,7 @@ igm-waypoint-3d .Altitude {
 }
 
 igm-waypoint-2d {
-  display: block;
+  display: var(--tgl-block);
   width: 200px;
   height: 200px;
   overflow: hidden;
