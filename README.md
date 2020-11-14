@@ -7,10 +7,8 @@
 ***This is the hub of my small UI mod's for game Microsoft Flight Simulator 2020.***
 
 ---
-```diff
-- <h2 align="center">WARNING!</h2>
-! <h3>If you have installed any of my mod downloaded before `14 Nov 2020`, please remove it. This version is not compatible with old mods and may lead to problems.</h3>
-```
+<h2 align="center">WARNING!</h2>
+<h3>If you have installed any of my mod downloaded before `14 Nov 2020`, please remove it. This version is not compatible with old mods and may lead to problems.</h3>
 ## About MOD's
 
 1. **uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.
