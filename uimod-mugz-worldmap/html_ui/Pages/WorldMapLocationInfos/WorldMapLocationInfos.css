@@ -1,0 +1,249 @@
+﻿/** This mixin makes a single line element fit exactly on the Roboto font for easier integration. */
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  align-items: flex-start;
+  align-content: flex-start;
+  --baseWidth0: calc( var(--minimalFontSize)*25 * 1px);
+  --baseWidth: calc(var(--screenHeight) * (var(--baseWidth0) / 2160)); }
+  body.EditionMode {
+    background-color: cornflowerblue; }
+    body.EditionMode #DebugPanel {
+      left: 2vh;
+      top: 70vh;
+      height: auto;
+      right: unset; }
+
+#Buttons {
+  display: block;
+  width: var(--baseWidth);
+  padding-left: calc(var(--screenHeight) * (10px / 2160));
+  padding-right: calc(var(--screenHeight) * (10px / 2160));
+  --buttonHeight: calc(var(--screenHeight) * (50px / 2160));
+  padding-top: calc(var(--screenHeight) * (40px / 2160));
+  height: calc(var(--fontSizeDefault) * 1.25 * 3 + calc(var(--screenHeight) * (20px / 1080))); }
+  #Buttons new-push-button {
+    margin: 0;
+    width: 100%; }
+    #Buttons new-push-button:not(:first-child) {
+      border-top: 1px solid white; }
+
+worldmap-location-info {
+  --backgroundColor: transparent;
+  --textColor: white;
+  --totalHeight: calc(var(--baseWidth) / 1.7);
+  --triSize: calc(var(--screenHeight) * (10px / 2160));
+  --shadowMargin: 5px;
+  --blockHeight: calc(var(--totalHeight) * 0.5 - var(--triSize));
+  --infosHeight: calc(var(--totalHeight) * 0.5 - var(--triSize));
+  --infoTop: calc(var(--infosHeight) + var(--triSize));
+  --boxshadowColor: 6px -2px red;
+  display: block;
+  width: var(--baseWidth);
+  height: var(--totalHeight);
+  margin: calc(var(--screenHeight) * (10px / 1080));
+  color: var(--textColor);
+  position: relative;
+  font-size: var(--fontSizeParagraph); }
+  worldmap-location-info .shadow {
+    top: var(--infoTop);
+    display: block;
+    position: relative;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: var(--infosHeight);
+    pointer-events: none; }
+  worldmap-location-info .Infos {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: var(--blockHeight);
+    background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: center;
+    padding: 0 var(--quartMargin);
+    align-items: center;
+    align-content: center;
+    z-index: 10;
+    overflow: hidden; }
+    worldmap-location-info .Infos .Separator {
+      display: block;
+      width: 1px;
+      flex: 0 0 auto;
+      height: 50%;
+      background-color: var(--textColor);
+      margin-left: calc(var(--screenHeight) * (10px / 2160));
+      margin-right: calc(var(--screenHeight) * (10px / 2160)); }
+    worldmap-location-info .Infos .Name {
+      font-weight: normal; /* bold; */
+      overflow-wrap: break-word;
+      font-size: calc(var(--fontSizeParagraph) * 0.9);
+      line-height: normal; /* 0.85; */
+      flex: 0 1 auto;
+      min-width: 0; }
+    worldmap-location-info .Infos .ICAO {
+      font-weight: 800;
+      display: block;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center; }
+  worldmap-location-info .ExtraInfos {
+    overflow: hidden;
+    height: var(--blockHeight);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    --iconColor: var(--textColor);
+    background-color: var(--backgroundColor);
+    border-top: 1px solid var(--textColor); }
+    worldmap-location-info .ExtraInfos .DepartureIcon, worldmap-location-info .ExtraInfos .ArrivalIcon {
+      width: calc( calc(var(--screenHeight) * (100px / 2160)) - var(--triSize));
+      height: 100%; }
+      worldmap-location-info .ExtraInfos .DepartureIcon icon-element, worldmap-location-info .ExtraInfos .ArrivalIcon icon-element {
+        width: 100%;
+        height: 100%; }
+    worldmap-location-info .ExtraInfos .Wind {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+  worldmap-location-info .Triangle {
+    position: absolute;
+    top: calc(100% - var( --triSize));
+    left: calc(50%);
+    transform: translateX(-50%);
+    display: block;
+    border-style: solid;
+    border-width: var(--triSize) var(--triSize) 0 var(--triSize);
+    border-color: var(--backgroundColor) transparent transparent transparent;
+    z-index: 10; }
+  worldmap-location-info:not(.Selected):not(.Departure):not(.Over):not(.Arrival) {
+    text-shadow: var(--textShadow); }
+  worldmap-location-info.Invisible {
+    opacity: 0; }
+  worldmap-location-info.Selected, worldmap-location-info.Departure, worldmap-location-info.Arrival {
+    --backgroundColor: white;
+    --textColor: black; }
+  worldmap-location-info.Selected .shadow, worldmap-location-info.Departure .shadow, worldmap-location-info.Arrival .shadow, worldmap-location-info.Over .shadow {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2); }
+  worldmap-location-info.Over {
+    --backgroundColor: var(--enabledHoverBackGroundColor);
+    --textColor: var(--enabledHoverColor); }
+  worldmap-location-info.Down {
+    --backgroundColor: var(--activeBackGroundColor) !important;
+    --textColor: var(--activeColor); }
+  worldmap-location-info:not(.Opened) .ExtraInfos {
+    display: none; }
+  worldmap-location-info.Opened {
+    --infoTop: var(--shadowMargin);
+    --infosHeight: calc(2 * var(--blockHeight)); }
+    worldmap-location-info.Opened .Triangle {
+      top: calc( var(--infosHeight) + var(--shadowMargin)); }
+  worldmap-location-info:not(.Departure) .ExtraInfos .DepartureIcon {
+    display: none; }
+  worldmap-location-info:not(.Arrival) .ExtraInfos .ArrivalIcon {
+    display: none; }
+  worldmap-location-info:not(.Enabled) {
+    opacity: 0.5; }
+
+flightplan-travel-info {
+  --backgroundColor: white;
+  --textColor: var(--color-cyan);
+  --baseWidth: calc(var(--screenHeight) * (calc( var(--minimalFontSize)*16 * 1px) / 2160));
+  width: var(--baseWidth);
+  display: block;
+  --totalHeight: calc(var(--baseWidth) / 2.5);
+  height: var(--totalHeight);
+  color: var(--textColor);
+  position: relative;
+  --triSize: calc(var(--screenHeight) * (10px / 2160));
+  --shadowMargin: 5px;
+  --blockHeight: calc(var(--totalHeight) * 0.9 - var(--triSize));
+  --infosHeight: calc(var(--totalHeight) * 0.1 - var(--triSize));
+  --infoTop: calc(var(--infosHeight) + var(--triSize)); }
+  flightplan-travel-info .shadow {
+    top: var(--infoTop);
+    display: block;
+    position: relative;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: var(--blockHeight);
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2); }
+  flightplan-travel-info .Infos {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: var(--blockHeight);
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    white-space: nowrap; }
+    flightplan-travel-info .Infos .Time {
+      pointer-events: none;
+      font-weight: bold; }
+    flightplan-travel-info .Infos .Distance span {
+      pointer-events: none; }
+  flightplan-travel-info .Triangle {
+    position: absolute;
+    top: calc(100% - var( --triSize) - 1px);
+    left: calc(50% - var( --triSize) * 0.5);
+    display: block;
+    border-style: solid;
+    border-width: var(--triSize) var(--triSize) 0 var(--triSize);
+    border-color: var(--backgroundColor) transparent transparent transparent; }
+  flightplan-travel-info.Over:not(.Selected) {
+    --textColor: var(--enabledColor);
+    --backgroundColor: var(--enabledBackGroundColor); }
+  flightplan-travel-info.Selected {
+    --textColor: var(--selectedColor);
+    --backgroundColor: var(--selectedBackgroundColor); }
+  flightplan-travel-info.Over {
+    --backgroundColor: var(--enabledHoverBackGroundColor);
+    --textColor: var(--enabledHoverColor); }
+  flightplan-travel-info.Down:not(.Selected), flightplan-travel-info:active:not(.Selected) {
+    --backgroundColor: var(--activeBackGroundColor) !important;
+    --textColor: var(--activeColor); }
+
+wind-cartouche {
+  --bgc: var(--color-white);
+  --tc: var(--color-dark-gray);
+  width: calc(var(--screenHeight) * (100px / 2160));
+  height: calc(var(--screenHeight) * (52px / 2160));
+  margin: 2px; }
+  wind-cartouche .shadow {
+    background-color: var(--bgc);
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center; }
+    wind-cartouche .shadow .arrow {
+      --angle: 0rad;
+      margin-left: calc(var(--screenHeight) * (4px / 2160));
+      --iconColor: var(--tc);
+      max-height: calc(var(--screenHeight) * (36px / 2160));
+      max-width: calc(var(--screenHeight) * (36px / 2160));
+      justify-content: center;
+      transform: rotate(var(--angle)); }
+    wind-cartouche .shadow .windspeed {
+      font-weight: bold;
+      font-size: calc(calc(var(--screenHeight) * (1px / 1080)) * var(--sizeParagraph));
+      text-align: center;
+      margin-left: auto;
+      justify-content: center;
+      margin-right: calc(var(--screenHeight) * (4px / 2160));
+      color: var(--tc);
+      flex: 1 0 auto; }
+
