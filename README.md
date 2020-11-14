@@ -12,6 +12,8 @@
 
 ---
 
+![Discord](https://img.shields.io/discord/395223818869669889?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mixMugz/msfs2020-uimod) ![GitHub All Releases](https://img.shields.io/github/downloads/mixMugz/msfs2020-uimod/total)
+
 ## About MOD's
 
 1. **uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.
