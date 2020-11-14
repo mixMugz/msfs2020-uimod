@@ -6,8 +6,8 @@
   font-style: normal;
 }
 :root {
-  --igm-block: block;
-  --igm-flex: flex;
+  --tgl-block: block;
+  --tgl-flex: flex;
 }
 igm-airtraffic-3d {
   /* Variables */
@@ -23,7 +23,7 @@ igm-airtraffic-3d {
   --data-color: #696969; /* Data color */
   --shadow-color: #424242; /* Text shadow and separator color */
   font-family: Roboto; /* Change fontface */
-  display: flex;
+  display: var(--tgl-flex);
   flex-direction: column;
   justify-content: space-around;
   width: calc(var(--scalefactor) * var(--screenHeight) * (450px / 2160));
@@ -33,7 +33,7 @@ igm-airtraffic-3d {
   opacity: var(--opacity);
 }
 igm-airtraffic-3d .name {
-  display: var(--igm-block);
+  display: block;
   width: 100%;
   /* padding: calc(var(--scalefactor) * var(--screenHeight) * (2px / 2160)) 0 calc(var(--scalefactor) * var(--screenHeight) * (2px / 2160)) 0; */
   font-size: var(--font-size);
@@ -50,7 +50,7 @@ igm-airtraffic-3d .name {
    -1px  0   0 var(--shadow-color);
 }
 igm-airtraffic-3d .data {
-  display: var(--igm-flex);
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -60,7 +60,7 @@ igm-airtraffic-3d .data {
   opacity: 0;
 }
 igm-airtraffic-3d.detailed .data {
-  display: var(--igm-flex);
+  display: flex;
   opacity: var(--opacity);
 }
 igm-airtraffic-3d .data span {

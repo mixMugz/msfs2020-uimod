@@ -9,7 +9,7 @@
   "title": " [UIMOD] Tiny Nameplates",
   "manufacturer": "",
   "creator": "Mugz",
-  "package_version": "0.0.3",
+  "package_version": "0.0.4",
   "minimum_game_version": "1.7.13",
   "release_notes": {
     "neutral": {
@@ -17,5 +17,5 @@
       "OlderHistory": ""
     }
   },
-  "total_package_size": "00000000000000010539"
+  "total_package_size": "00000000000000003792"
 }
