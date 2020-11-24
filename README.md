@@ -1,4 +1,4 @@
->Tested and work perfect with v.1.10.11.0 (update 6)
+>Tested and work perfect with v.1.11.6.0 (update 7)
 
 <h4 align="center">
   <img alt="MSFS2020" src="logo.png">
