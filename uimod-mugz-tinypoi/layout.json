@@ -1,14 +1,19 @@
 {
   "content": [
     {
+      "path": "ContentInfo/mugz-uimods/Thumbnail.jpg",
+      "size": 32721,
+      "date": 132507213133273677
+    },
+    {
       "path": "html_ui/Pages/InGameMarkers/Templates/IGM_Gate.css",
       "size": 578,
-      "date": 132412723900274897
+      "date": 132496416135383749
     },
     {
       "path": "html_ui/Pages/InGameMarkers/Templates/IGM_Waypoint.css",
       "size": 7376,
-      "date": 132412723900274897
+      "date": 132498148865271405
     }
   ]
 }

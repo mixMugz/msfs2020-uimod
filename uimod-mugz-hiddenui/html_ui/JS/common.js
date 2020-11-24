@@ -2491,7 +2491,7 @@ class UIMarquee extends UIElement {
                 this.m_savedOffsetWidth = this.offsetWidth;
             }
             if (!this.noSizeCheck || !this.m_savedContentWidth) {
-                this.m_savedContentWidth = this.m_savedContentWidth;
+                this.m_savedContentWidth = this.scrollWidth;
             }
             if (this.m_animation && (this.noSizeCheck || this.m_savedContentWidth === this.scrollWidth)) {
                 this.m_animation.stop();
@@ -3625,7 +3625,7 @@ function OnInputFieldFocus(e) {
         OnInputFieldUnfocus(e);
     });
     if (!input.hasAttribute("custom-inputbar"))
-        Coherent.trigger("FOCUS_INPUT_FIELD", input.id);
+        Coherent.trigger("FOCUS_INPUT_FIELD", input.id, input.value);
 }
 function OnInputFieldUnfocus(e) {
     let input = e.target;
@@ -3889,10 +3889,10 @@ class Vec2 {
         this.x = _x;
         this.y = _y;
     }
-    static FromRect(elem) {
+    static FromRect(rect) {
         var ret = new Vec2();
-        ret.x = elem.left + elem.width * 0.5;
-        ret.y = elem.top + elem.height * 0.5;
+        ret.x = rect.left + rect.width * 0.5;
+        ret.y = rect.top + rect.height * 0.5;
         return ret;
     }
     static Delta(vec1, vec2) {
@@ -3901,19 +3901,18 @@ class Vec2 {
         ret.y = vec1.y - vec2.y;
         return ret;
     }
-    VectorTo(pt2) {
-        if (pt2)
-            return Vec2.Delta(pt2, this);
+    VectorTo(other) {
+        if (other)
+            return Vec2.Delta(other, this);
         else
             return new Vec2(0, 0);
     }
     toCurvePointString() {
         return `${this.x} ${this.y}`;
     }
-    Dot(b) {
-        return this.x * b.x + this.y * b.y;
+    Dot(other) {
+        return this.x * other.x + this.y * other.y;
     }
-    ;
     GetNorm() {
         return Math.sqrt(this.Dot(this));
     }
@@ -3932,11 +3931,14 @@ class Vec2 {
             this.y *= factor;
         }
     }
-    static SqrDistance(p1, p2) {
-        return (p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y);
+    SqrDistance(other) {
+        return (this.x - other.x) * (this.x - other.x) + (this.y - other.y) * (this.y - other.y);
     }
-    static Distance(p1, p2) {
-        return Math.sqrt(Vec2.SqrDistance(p1, p2));
+    Distance(other) {
+        return Math.sqrt(this.SqrDistance(other));
+    }
+    Equals(other) {
+        return (this.SqrDistance(other) < Number.EPSILON) ? true : false;
     }
 }
 class Vec3 {
@@ -4216,12 +4218,12 @@ var InputBar;
     var m_InputBarListener = null;
     var m_Registered = [];
     function setInputBar(id, params) {
+        m_Registered.push(id);
         if (m_InputBarListener && m_InputBarListener.connected) {
             Coherent.trigger("REGISTER_INPUT_BAR", id, window.location.pathname);
             Coherent.trigger("SET_INPUT_BAR", id, params, window.location.pathname);
         }
         else {
-            m_Registered.push(id);
             m_InputBarListener = RegisterViewListener("JS_LISTENER_INPUTBAR", function () {
                 Coherent.trigger("REGISTER_INPUT_BAR", id, window.location.pathname);
                 Coherent.trigger("SET_INPUT_BAR", id, params, window.location.pathname);

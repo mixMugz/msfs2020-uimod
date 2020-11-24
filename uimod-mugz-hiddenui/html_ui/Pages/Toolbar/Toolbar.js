@@ -1,4 +1,4 @@
-﻿const CUSTOMIZE_BUTTON_DATA = {
+const CUSTOMIZE_BUTTON_DATA = {
     __Type: "ToolBarButtonData",
     buttonVisible: true,
     childActive: false,

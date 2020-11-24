@@ -7,7 +7,7 @@ body {
   overflow: hidden;
   align-items: flex-start;
   align-content: flex-start;
-  --baseWidth0: calc( var(--minimalFontSize)*25 * 1px);
+  --baseWidth0: calc( var(--minimalFontSize) * 26px);
   --baseWidth: calc(var(--screenHeight) * (var(--baseWidth0) / 2160)); }
   body.EditionMode {
     background-color: cornflowerblue; }
@@ -24,7 +24,7 @@ body {
   padding-right: calc(var(--screenHeight) * (10px / 2160));
   --buttonHeight: calc(var(--screenHeight) * (50px / 2160));
   padding-top: calc(var(--screenHeight) * (40px / 2160));
-  height: calc(var(--fontSizeDefault) * 1.25 * 3 + calc(var(--screenHeight) * (20px / 1080))); }
+  height: calc(var(--fontSizeDefault) * 1.25 * 4 + calc(var(--screenHeight) * (20px / 1080))); }
   #Buttons new-push-button {
     margin: 0;
     width: 100%; }
@@ -73,14 +73,14 @@ worldmap-location-info {
       display: block;
       width: 1px;
       flex: 0 0 auto;
-      height: 50%;
+      height: 50%; /* 60%; */
       background-color: var(--textColor);
       margin-left: calc(var(--screenHeight) * (10px / 2160));
       margin-right: calc(var(--screenHeight) * (10px / 2160)); }
     worldmap-location-info .Infos .Name {
       font-weight: normal; /* bold; */
       overflow-wrap: break-word;
-      font-size: calc(var(--fontSizeParagraph) * 0.9);
+      font-size: calc(var(--fontSizeParagraph) * 0.9); /* var(--fontSizeParagraph); */
       line-height: normal; /* 0.85; */
       flex: 0 1 auto;
       min-width: 0; }

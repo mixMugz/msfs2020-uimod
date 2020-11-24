@@ -1,6 +1,7 @@
 <?xml version= "1.0" encoding= "utf-8" ?>
 <DeviceConfig>
 	<Device ProductId="0x1900" TextureFolder="H.Alpha Flight Control" />					<!-- Alpha Flight Controls -->
+	<Device ProductId="0x1901" TextureFolder="Bravo Throttle Quadrant" />					<!-- Bravo Throttle Quadrant-->
 	<Device ProductId="0x884B" TextureFolder="Logitech G513"					Priority="-10" />	<!-- Keyboard -->
 	<Device ProductId="0x378D" TextureFolder="Logitech G502 Hero"					Priority="-9" />	<!-- Mouse -->
 	<Device ProductId="0xC215" TextureFolder="Saitek Extreme 3D Pro Stick" />				<!-- Logitech Extreme 3D (NB: Saitek = Logitech) -->

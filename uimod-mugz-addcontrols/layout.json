@@ -1,74 +1,79 @@
 {
   "content": [
     {
+      "path": "ContentInfo/mugz-uimods/Thumbnail.jpg",
+      "size": 32721,
+      "date": 132507213133273677
+    },
+    {
       "path": "DeviceConfig/DeviceConfig.xml",
-      "size": 4475,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G513/Backspace.svg",
-      "size": 6206,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G513/Delete.svg",
-      "size": 1681,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G513/Enter.svg",
-      "size": 2639,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G513/Esc.svg",
-      "size": 2184,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G513/layout.png",
-      "size": 491485,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/MOUSE_BUTTON_LEFT.svg",
-      "size": 869,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/MOUSE_BUTTON_RIGHT.svg",
-      "size": 440,
-      "date": 132423197886644048
+      "size": 4583,
+      "date": 132507191638964736
     },
     {
       "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/layout.png",
       "size": 414515,
-      "date": 132423197886644048
+      "date": 132461199954771427
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/MOUSE_BUTTON_LEFT.svg",
+      "size": 869,
+      "date": 132449188673470424
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/MOUSE_BUTTON_RIGHT.svg",
+      "size": 440,
+      "date": 132449188457341728
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G513/Backspace.svg",
+      "size": 6206,
+      "date": 132449188642776815
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G513/Delete.svg",
+      "size": 1681,
+      "date": 132449188849287973
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G513/Enter.svg",
+      "size": 2639,
+      "date": 132449188776805518
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G513/Esc.svg",
+      "size": 2184,
+      "date": 132449188951769466
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G513/layout.png",
+      "size": 491485,
+      "date": 132461199149414600
     },
     {
       "path": "html_ui/Textures/Menu/Control/MFG Crosswind V2/layout.png",
       "size": 621050,
-      "date": 132423197886644048
+      "date": 132468036127734656
     },
     {
       "path": "html_ui/Textures/Menu/Control/TrackIR/layout.png",
       "size": 360533,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/VPC Stick MT-50CM/layout.png",
-      "size": 853781,
-      "date": 132423197886644048
-    },
-    {
-      "path": "html_ui/Textures/Menu/Control/VPC Throttle MT-50CM2/layout.png",
-      "size": 1301065,
-      "date": 132423197886644048
+      "date": 132461169858231860
     },
     {
       "path": "html_ui/Textures/Menu/Control/VPC Rudder Pedals/layout.png",
       "size": 978876,
-      "date": 132423197886644048
+      "date": 132461418905942276
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/VPC Stick MT-50CM/layout.png",
+      "size": 853781,
+      "date": 132461315034364471
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/VPC Throttle MT-50CM2/layout.png",
+      "size": 1301065,
+      "date": 132461300396864605
     }
   ]
 }

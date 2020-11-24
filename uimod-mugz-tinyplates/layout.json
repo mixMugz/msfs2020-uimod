@@ -1,9 +1,14 @@
 {
   "content": [
     {
+      "path": "ContentInfo/mugz-uimods/Thumbnail.jpg",
+      "size": 32721,
+      "date": 132507213133273677
+    },
+    {
       "path": "html_ui/Pages/InGameMarkers/Templates/IGM_AirTraffic.css",
       "size": 3188,
-      "date": 132412723900274897
+      "date": 132496416061209350
     }
   ]
 }

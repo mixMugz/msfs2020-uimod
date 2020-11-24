@@ -1,9 +1,14 @@
 {
   "content": [
     {
+      "path": "ContentInfo/mugz-uimods/Thumbnail.jpg",
+      "size": 32721,
+      "date": 132507213133273677
+    },
+    {
       "path": "html_ui/Pages/WorldMapLocationInfos/WorldMapLocationInfos.css",
-      "size": 9107,
-      "date": 132488804176218364
+      "size": 9148,
+      "date": 132507199214171473
     }
   ]
 }
