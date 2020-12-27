@@ -1,0 +1,111 @@
+﻿:root {
+  --igm-block: block; /* Default state */
+  --igm-flex: flex; /* Default state */
+  --opacity: 0.8; /* Transparency */
+  --scalefactor: 0.75; /* Size factor. 1 - no scale, 0.х - smaller */
+  --data-scalefactor: 0.9; /* Size factor for data. 1 - no scale, 0.x - smaller */
+  --scalefactor-separator: 0.1;
+  --detail-display: flex; /* Draw data block?. Yes - flex, No - none */
+  --separator-display: block; /* Draw separator?. Yes - block, No - none */
+  --detail-separator-spacingfactor: 0.2;
+  --font-size: calc(var(--fontSizeParagraph) * var(--scalefactor)); /* Font size */
+  --color: #ffffff; /* Nameplate color */
+  --data-color: #424242; /* Data color */
+  --shadow-color: #424242; /* Text shadow and separator color */
+  --shadow: -1px -1px 0 var(--shadow-color),
+     0   -1px 0 var(--shadow-color),
+     1px -1px 0 var(--shadow-color),
+     1px  0   0 var(--shadow-color),
+     1px  1px 0 var(--shadow-color),
+     0    1px 0 var(--shadow-color),
+    -1px  1px 0 var(--shadow-color),
+    -1px  0   0 var(--shadow-color);
+  --anim-time: 15s; /* Animation speed */
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Fonts/RobotoMono-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes data {
+   0% { color: var(--shadow-color); opacity: 0; }
+  30% { color: var(--shadow-color); opacity: 0; }
+  32% { color: var(--shadow-color); opacity: var(--opacity); }
+  49% { color: var(--shadow-color); opacity: var(--opacity); }
+  51% { color: var(--color); opacity: var(--opacity); }
+  68% { color: var(--color); opacity: var(--opacity); }
+  70% { color: var(--color); opacity: 0; }
+ 100% { color: var(--color); opacity: 0; }
+}
+@keyframes separator {
+   0% { background: var(--shadow-color); opacity: 0; }
+  30% { background: var(--shadow-color); opacity: 0; }
+  32% { background: var(--shadow-color); opacity: var(--opacity); }
+  49% { background: var(--shadow-color); opacity: var(--opacity); }
+  51% { background: var(--color); opacity: var(--opacity); }
+  68% { background: var(--color); opacity: var(--opacity); }
+  70% { background: var(--color); opacity: 0; }
+ 100% { background: var(--color); opacity: 0; }
+}
+igm-airtraffic-3d {
+  display: var(--igm-flex);
+  font-family: Roboto; /* Change fontface */
+  justify-content: space-around;
+  width: calc(var(--scalefactor) * var(--screenHeight) * (450px / 2160));
+  height: calc(var(--scalefactor) * var(--screenHeight) * (120px / 2160));
+  opacity: var(--opacity);
+}
+igm-airtraffic-3d .name {
+  padding: 0 0 0 0;
+  font-size: var(--font-size);
+  text-shadow: var(--shadow);
+  text-transform: none;
+}
+igm-airtraffic-3d.detailed .name {
+  background: none;
+  margin-bottom: 0;
+}
+igm-airtraffic-3d:not(.detailed) .name {
+  text-shadow: var(--shadow);
+}
+igm-airtraffic-3d .data {
+  display: flex;
+  justify-content: space-around;
+  animation: data var(--anim-time) infinite;
+  font-size: calc(var(--font-size) * var(--data-scalefactor));
+}
+igm-airtraffic-3d.detailed .data {
+  display: flex;
+  opacity: var(--opacity);
+}
+igm-airtraffic-3d .data span {
+  text-shadow: none;
+}
+igm-airtraffic-3d .data-item {
+  display: var(--detail-display);
+  max-width: 100%;
+  text-transform: none;
+}
+igm-airtraffic-3d .data-item[data-type="PLANE_TYPE"] {
+  width: 50%;
+  box-align: right;
+  justify-content: flex-end;
+}
+igm-airtraffic-3d .data-item[data-type="PLANE_ALTITUDE"] {
+  width: 50%;
+  box-align: left;
+  justify-content: flex-start;
+  text-transform: lowercase;
+  flex: unset;
+}
+igm-airtraffic-3d .data .separator {
+  display: var(--separator-display);
+  height: calc(var(--scalefactor) * var(--screenHeight) * (40px / 2160));
+  animation: separator var(--anim-time) infinite;
+  background: var(--shadow-color);
+  margin: 0px 5px;
+}
+igm-airtraffic-3d .data.condensed .separator {
+  margin: 0px 5px;
+}
