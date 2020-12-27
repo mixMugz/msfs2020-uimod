@@ -9,13 +9,13 @@
   "title": " [UIMOD] Additional Controls",
   "manufacturer": "",
   "creator": "Mugz",
-  "package_version": "0.0.3",
+  "package_version": "1.12.13.0",
   "minimum_game_version": "1.7.13",
   "release_notes": {
     "neutral": {
-      "LastUpdate": "",
-      "OlderHistory": ""
+      "LastUpdate": "VERSION 1.12.13.0 RELEASED DECEMBER 27, 2020\\n- Fixed for SimUpdate 2\\n- Added new device:\\n  + BU0836\\n  + BU0836X\\n  + Saitek Pro Flight Combat Rudder Pedals\\n  + Logitech Freedom 2.4\\n  + Logitech G940 Stick\\n  + Logitech G940 Throttle\\n  + Logitech G940 Pedals\\n  + Saitek AV8R Stick\\n  + CH Products Flight Sim Yoke\\n  + CH Products Pro Pedals",
+      "OlderHistory": "VERSION 1.11.6.0 RELEASED NOVEMBER 24, 2020\\n- Fixed for Patch 7"
     }
   },
-  "total_package_size": "00000000000005042242"
+  "total_package_size": "00000000000016986057"
 }

@@ -40,6 +40,7 @@
 	<Device ProductId="0x0405" TextureFolder="T.A320 Pilot" />								<!-- T.A320 Pilot (Left handed) -->
 	<Device ProductId="0x0406" TextureFolder="T.A320 Copilot" />							<!-- T.A320 Copilot (Right handed) -->
 	<Device ProductId="0x0407" TextureFolder="T.A320 Quadrant throttle" />					<!-- Airbus T-A320 Quadrant throttle -->
+	<!-- Custom Added -->
 	<!-- TrackIR -->
 	<Device ProductId="0x%41X" TextureFolder="TrackIR" />
 	<!-- VPC -->
@@ -48,4 +49,18 @@
 	<Device ProductId="0x01F4" TextureFolder="VPC Rudder Pedals" />
 	<!-- MFG -->
 	<Device ProductId="0x0A38" TextureFolder="MFG Crosswind V2" />
+        <!-- Saitek addition -->
+	<Device ProductId="0x0764" TextureFolder="Saitek Pro Flight Combat Rudder Pedals" />
+        <!-- Logitech addition -->
+	<Device ProductId="0xC213" TextureFolder="Logitech Freedom 2.4" />
+	<Device ProductId="0xC2A8" TextureFolder="Logitech G940 Joystick" />
+	<Device ProductId="0xC2AA" TextureFolder="Logitech G940 Pedals" />
+	<Device ProductId="0xC2A9" TextureFolder="Logitech G940 Throttle" />
+	<!-- CH Devices -->
+	<Device ProductId="0x00FF" TextureFolder="CH Products Flight Sim Yoke" />
+	<Device ProductId="0x00F2" TextureFolder="CH Products Pro Pedals" />
+	<Device ProductId="0x0461" TextureFolder="Saitek AV8R" />
+	<!-- BU Devices -->
+	<Device ProductId="0x05B5" TextureFolder="BU0836" />
+	<Device ProductId="0x1001" TextureFolder="BU0836X" />
 </DeviceConfig>

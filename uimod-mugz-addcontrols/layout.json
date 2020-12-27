@@ -7,8 +7,33 @@
     },
     {
       "path": "DeviceConfig/DeviceConfig.xml",
-      "size": 4583,
-      "date": 132507191638964736
+      "size": 5406,
+      "date": 132534617416177338
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/BU0836/layout.png",
+      "size": 1270425,
+      "date": 132534613628033751
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/BU0836X/layout.png",
+      "size": 1145827,
+      "date": 132534615818265561
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/CH Products Flight Sim Yoke/layout.png",
+      "size": 1823552,
+      "date": 132522000367918041
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/CH Products Pro Pedals/layout.png",
+      "size": 1922380,
+      "date": 132522001173258513
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech Freedom 2.4/layout.png",
+      "size": 748890,
+      "date": 132511143538780130
     },
     {
       "path": "html_ui/Textures/Menu/Control/Logitech G502 Hero/layout.png",
@@ -51,9 +76,34 @@
       "date": 132461199149414600
     },
     {
+      "path": "html_ui/Textures/Menu/Control/Logitech G940 Joystick/layout.png",
+      "size": 712802,
+      "date": 132521996673903117
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G940 Pedals/layout.png",
+      "size": 1269310,
+      "date": 132518259553167053
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Logitech G940 Throttle/layout.png",
+      "size": 1208960,
+      "date": 132518257235768898
+    },
+    {
       "path": "html_ui/Textures/Menu/Control/MFG Crosswind V2/layout.png",
       "size": 621050,
       "date": 132468036127734656
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Saitek AV8R/layout.png",
+      "size": 814298,
+      "date": 132522001861064080
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/Saitek Pro Flight Combat Rudder Pedals/layout.png",
+      "size": 991697,
+      "date": 132508902131599080
     },
     {
       "path": "html_ui/Textures/Menu/Control/TrackIR/layout.png",
