@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/SCSS/common.css" />
+    <link rel="stylesheet" href="./WorldMapLocationInfos.css" />
+    <link rel="stylesheet" href="/mCSS/mugzWMLI.css" />
+
+    <script type="text/javascript" src="/JS/coherent.js"></script>
+    <script type="text/javascript" src="/JS/common.js"></script>
+    <script type="text/javascript" src="WorldMapLocationInfos.js"></script>
+    
+    <script type="text/javascript" src="/JS/buttons.js"></script>
+    <link rel="import" href="/templates/NewPushButton/NewPushButton.html" />
+
+    <script type="text/html" id="WorldMapLocationInfoTemplate">
+        <div class="shadow">
+            <div class="Infos">
+                <div class="ICAO"></div>
+                <div class="Separator"></div>
+                <div class="Name"><p></p></div>
+            </div>
+            <div class="ExtraInfos">
+                <icon-element class="DepartureIcon" data-url="/icons/freeflight/worldMap_Departure.svg"></icon-element>
+                <div class="Wind">
+                    <icon-element data-url="/icons/waypoints/worldMap/ICON_MAP_FLAG_WIND.svg"></icon-element>
+                    <div class="Value"></div>
+                </div>
+                <icon-element class="ArrivalIcon" data-url="/icons/freeflight/worldMap_Arrival.svg"></icon-element>
+            </div>
+        </div>
+        <div class="Triangle"></div>
+
+    </script>
+
+    <script type="text/html" id="FlightPlanTravelInfoTemplate">
+        <div class="shadow">
+            <div class="Infos">
+                <div class="Time"><span class="hours"></span> h <span class="minutes"></span> min</div>
+                <div class="Distance"><span class="value"></span> <span class="unit"></span></div>
+            </div>
+        </div>
+        <div class="Triangle"></div>
+
+    </script>
+
+    <script type="text/html" id="WindCartoucheTemplate">
+        <div class="shadow">
+            <icon-element class="arrow" data-url="/icons/weather/ICON_MAP_ARROW_WIND.svg"></icon-element>
+            <div class="windspeed">32</div>
+        </div>
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

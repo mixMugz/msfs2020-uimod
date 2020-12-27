@@ -1,0 +1,9 @@
+﻿worldmap-location-info .Infos .Separator {
+  width: 1px;
+  height: 50%; /* 60%; */
+}
+worldmap-location-info .Infos .Name {
+  font-size: calc(var(--fontSizeParagraph) * 0.9); /* var(--fontSizeParagraph); */
+  font-weight: normal; /* bold; */
+  line-height: normal; /* 0.85; */
+}
