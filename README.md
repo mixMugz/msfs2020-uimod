@@ -18,7 +18,7 @@
 
 1. **uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.
 2. **uimod-mugz-hiddentooltip**: This mod turns off all hover tooltips by default, but makes it possible to turn them ON if desired. It is enough to hold down the "ALT" key when you hover. Also, the size of the tooltips themselves has been reduced and transparency has been added (For correct operation, you must enable Show tooltip in the game).
-3. **uimod-mugz-hiddenui**: This CORE mod add ability to toggle in game UI ellement (such POI/Waypoints/Gates/HUD/Nameplates, if they are enabled) on the fly by pressing one button. By default it's `BackSpace` key. For correct operation, you must install my other mod for every desired UI element.
+3. **uimod-mugz-hiddenui**: This CORE mod add ability to toggle in game UI ellement (such POI/Waypoints/Gates/HUD/Nameplates, if they are enabled) on the fly by pressing one button. By default it's `BackSpace` key. For correct operation, you must install my other mod for every desired UI element. Also use F12 or NumLock key for separately toggle IngameMarkers or Hud.
 4. **uimod-mugz-tinyhud**: This mod add ability to toggle InGameHud on the fly (Required: *uimod-mugz-hiddenui* mod).
 5. **uimod-mugz-tinyplates**: This is tiny nameplates to replace the default monstrous ones. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).
 6. **uimod-mugz-tinypoi**: This is tiny POI/City/Airport nameplates. Smaller text/icon and removed Black background. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).
@@ -26,7 +26,7 @@
 
 ## Known issue
 
-- When you hide the interface, white lines remain under the POI. They will disappear after a few seconds (from 1 to 10). I have no idea (and not found) which particular element is responsible for them, so I cannot operate with them. If you find it, let me know.
+- **uimod-mugz-hiddenui** is not compatible with **msfs-toolbar-nohandle** mod. This mod is integrated now.
 
 ## Installation
 
@@ -38,7 +38,7 @@ Just remove those folders from `Community` folder.
 
 ## FAQ
 
-- Q: "How i can change shortcut key?"<br>A: "Change variable `var mKey = 8` in `uimod-mugz-hiddenui\html_ui\JS\common.js`. You can get the keycode on the website: https://keycode.info/
+- Q: "How i can change shortcut key?"<br>A: "Change variables in `uimod-mugz-hiddenui\html_ui\mJS\mugzUI.js`. You can get the keycode on the website: https://keycode.info/
 
 - Q: "I don't like you tinynameplates mod, can i use another mod or selfmaded?"<br>A: 'Yes! [These](https://github.com/clompsy/msfs_nameplates) nameplates must also be compatible with **uimod-mugz-hiddenui**. You can put them instead **uimod-mugz-tinyplates**. For self maded just add in *IGM_AirTraffic.css* - :root definition and change *igm-airtraffic-3d* display style to *display: var(--tgl-flex);*
 
