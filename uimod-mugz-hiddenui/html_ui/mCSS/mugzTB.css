@@ -1,0 +1,3 @@
+﻿tool-bar .toolbar-handle.visible, tool-bar .toolbar-handle.active {
+  opacity: 0; 
+}
