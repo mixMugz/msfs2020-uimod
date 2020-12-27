@@ -6,14 +6,19 @@
       "date": 132507213133273677
     },
     {
-      "path": "html_ui/Pages/InGameMarkers/Templates/IGM_Gate.css",
-      "size": 578,
-      "date": 132496416135383749
+      "path": "html_ui/mCSS/mugzIGMWG.css",
+      "size": 1861,
+      "date": 132535420734777388
     },
     {
-      "path": "html_ui/Pages/InGameMarkers/Templates/IGM_Waypoint.css",
-      "size": 7376,
-      "date": 132498148865271405
+      "path": "html_ui/Pages/InGameMarkers/Templates/IGM_Gate.html",
+      "size": 261,
+      "date": 132535373337972885
+    },
+    {
+      "path": "html_ui/Pages/InGameMarkers/Templates/IGM_Waypoint.html",
+      "size": 1204,
+      "date": 132535373449061473
     }
   ]
 }

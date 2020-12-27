@@ -1,0 +1,69 @@
+﻿:root {
+  --igm-block: block;
+  --igm-flex: flex;
+}
+igm-gate {
+  display: var(--igm-block);
+}
+igm-gate .Text {
+  display: var(--igm-flex);
+}
+igm-waypoint-2d {
+  display: var(--igm-block);
+}
+igm-waypoint-3d {
+  --totalHeight: calc(var(--screenHeight) * (105px / 1080));
+  --iconsize: calc(var(--screenHeight) * (36px / 1080));
+  --shadow-color: #424242AA; /*var(--backgroundColorPanel);*/
+  --shadow: -1px -1px 0 var(--shadow-color),
+     0   -1px 0 var(--shadow-color),
+     1px -1px 0 var(--shadow-color),
+     1px  0   0 var(--shadow-color),
+     1px  1px 0 var(--shadow-color),
+     0    1px 0 var(--shadow-color),
+    -1px  1px 0 var(--shadow-color),
+    -1px  0   0 var(--shadow-color);
+  display: var(--igm-block);
+}
+igm-waypoint-3d .Infos {
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+  padding: calc(var(--screenHeight) * (1px / 1080));
+}
+igm-waypoint-3d .Infos .Top {
+  background-color: transparent;
+}
+igm-waypoint-3d .Infos .Top .Separator {
+  height: 40%;
+  box-shadow: var(--shadow);
+  margin: 5px;
+}
+igm-waypoint-3d .Infos .Top .Name {
+  text-align: right;
+  box-align: right;
+  justify-content: flex-end;
+}
+igm-waypoint-3d .Infos .Top .Name p {
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+  text-shadow: var(--shadow);
+}
+igm-waypoint-3d .Infos .Top .Distance {
+  margin-left: none;
+  box-align: left;
+  justify-content: flex-start;
+}
+igm-waypoint-3d .Infos .Top .Distance p {
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+  text-shadow: var(--shadow);
+}
+igm-waypoint-3d .Infos .Status {
+  font-size: calc(var(--screenHeight) * (18px / 1080));
+  text-align: center;
+}
+igm-waypoint-3d .Icon {
+  top: calc(var(--screenHeight) * (45px / 1080));
+}
+igm-waypoint-3d .Altitude {
+  top: calc(var(--screenHeight) * (80px / 1080));
+  font-size: calc(var(--screenHeight) * (16px / 1080));
+  text-shadow: var(--shadow);
+}
