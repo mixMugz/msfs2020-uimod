@@ -1,0 +1,11 @@
+﻿:root {
+  --tips-block: none;
+}
+notification-tooltip {
+  display: var(--tips-block);
+  font-size: calc(var(--fontSizeDefault) * 0.7);
+}
+notification-tooltip .background {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
