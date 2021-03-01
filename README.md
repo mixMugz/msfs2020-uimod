@@ -12,7 +12,7 @@
 
 ---
 
-![Discord](https://img.shields.io/discord/395223818869669889?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mixMugz/msfs2020-uimod) ![GitHub All Releases](https://img.shields.io/github/downloads/mixMugz/msfs2020-uimod/total)
+[![Discord](https://img.shields.io/discord/395223818869669889?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/jzcaAv3dP6) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/mixMugz/msfs2020-uimod) ![GitHub All Releases](https://img.shields.io/github/downloads/mixMugz/msfs2020-uimod/total)](https://github.com/mixMugz/msfs2020-uimod/releases)
 
 ## About MOD's
 
