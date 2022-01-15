@@ -8,7 +8,7 @@
 
 ---
 <h2 align="center">WARNING!</h2>
-<h3>If you have installed any of my mod downloaded before `27 Dec 2020`, please remove it. This version is not compatible with old mods and may lead to problems.</h3>
+<h3>Always remove old version before install new!!!</h3>
 
 ---
 
@@ -16,18 +16,17 @@
 
 ## About MOD's
 
-1. **uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.
-2. **uimod-mugz-hiddentooltip**: This mod turns off all hover tooltips by default, but makes it possible to turn them ON if desired. It is enough to hold down the "ALT" key when you hover. Also, the size of the tooltips themselves has been reduced and transparency has been added (For correct operation, you must enable Show tooltip in the game).
+1. **TEMPORARY NOT WORKING!!!** ~~**uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.~~
+2. **TEMPORARY NOT WORKING!!!** ~~**uimod-mugz-hiddentooltip**: This mod turns off all hover tooltips by default, but makes it possible to turn them ON if desired. It is enough to hold down the "ALT" key when you hover. Also, the size of the tooltips themselves has been reduced and transparency has been added (For correct operation, you must enable Show tooltip in the game).~~
 3. **uimod-mugz-hiddenui**: This CORE mod add ability to toggle in game UI ellement (such POI/Waypoints/Gates/HUD/Nameplates, if they are enabled) on the fly by pressing one button. By default it's `BackSpace` key. For correct operation, you must install my other mod for every desired UI element. Also use F12 or NumLock key for separately toggle IngameMarkers or Hud.
-4. **uimod-mugz-tinyhud**: This mod add ability to toggle InGameHud on the fly (Required: *uimod-mugz-hiddenui* mod).
+4. **TEMPORARY NOT WORKING!!!** ~~**uimod-mugz-tinyhud**: This mod add ability to toggle InGameHud on the fly (Required: *uimod-mugz-hiddenui* mod).~~
 5. **uimod-mugz-tinyplates**: This is tiny nameplates to replace the default monstrous ones. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).
-6. **uimod-mugz-tinypoi**: This is tiny POI/City/Airport nameplates. Smaller text/icon and removed Black background. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).
+6. **TEMPORARY NOT WORKING!!!** ~~**uimod-mugz-tinypoi**: This is tiny POI/City/Airport nameplates. Smaller text/icon and removed Black background. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).~~
 7. **uimod-mugz-worldmap**: This small style correction for WorldMap POI/City/Airport names. Added separator for UI scale less 80%, changed smaller font size for city names and corrected line spaces.
 
 ## Known issue
 
-- **uimod-mugz-hiddenui** is not compatible with **msfs-toolbar-nohandle** mod. This mod is integrated now.
-
+- **uimod-mugz-hiddenui** is not compatible with **msfs-toolbar-nohandle** mod.
 ## Installation
 
 Just download from [release](https://github.com/mixMugz/msfs2020-uimod/releases) page archive pack and install what you need to `Community` folder.
@@ -46,7 +45,6 @@ Just remove those folders from `Community` folder.
 
 ## Finaly
 
->You can support my future development. Just...
-<h4 align="center">
-  <a href="https://paypal.me/mixmugz" title="Donate for beer"><img alt="Beer" src="beer.jpg"></a>
-</h4>
+>If you want to support me, here's my donation link:
+[Buy Me a Coffee](https://www.buymeacoffee.com/mugz) or [Buy Me a Beer](https://paypal.me/mixmugz) :)
+![Donation?](https://i.imgur.com/vQyI7N5.png)
