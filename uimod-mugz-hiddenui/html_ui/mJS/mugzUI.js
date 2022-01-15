@@ -2,6 +2,11 @@ var hKey = 144; // Hud toggle. NumLock keybind.
 var iKey = 123; // Ingame Markers (POI/Nameplates) toggle. F12 keybind.
 var mKey = 8;   // Main (all items) toggle. Backspace keybind.
 
+if (mugzInit === null) {
+  var page = document.getElementById('youriframe');
+  var mugzInit = true;
+}
+
 if (localStorage.getItem('hToggle') === null) localStorage.setItem('hToggle', 'true');
 if (localStorage.getItem('iToggle') === null) localStorage.setItem('iToggle', 'true');
 if (localStorage.getItem('mToggle') === null) localStorage.setItem('mToggle', 'true');
