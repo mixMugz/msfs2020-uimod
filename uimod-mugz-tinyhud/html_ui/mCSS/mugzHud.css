@@ -1,6 +1,0 @@
-﻿:root {
-  --hud-block: block;
-}
-#InGameHud {
-  display: var(--hud-block);
-}
