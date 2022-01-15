@@ -12,26 +12,23 @@ if (localStorage.getItem('iToggle') === null) localStorage.setItem('iToggle', 't
 if (localStorage.getItem('mToggle') === null) localStorage.setItem('mToggle', 'true');
 
 window.document.documentElement.style.setProperty('--hud-block', (localStorage.getItem('hToggle') == 'true') ? 'block' : 'none');
-window.document.documentElement.style.setProperty('--igm-block', (localStorage.getItem('iToggle') == 'true') ? 'block' : 'none');
-window.document.documentElement.style.setProperty('--igm-flex', (localStorage.getItem('iToggle') == 'true') ? 'flex' : 'none');
+window.document.documentElement.style.setProperty('--igm-vis', (localStorage.getItem('iToggle') == 'true') ? 'visible' : 'hidden');
 
 window.document.addEventListener("keyup", function (e) {
   if (e.keyCode == hKey) {
-    setTimeout(function() { 
+    setTimeout(function() {
       window.document.documentElement.style.setProperty('--hud-block', (localStorage.getItem('hToggle') == 'true') ? 'block' : 'none');
     }, 50);
   }
   else if (e.keyCode == iKey) {
-    setTimeout(function() { 
-      window.document.documentElement.style.setProperty('--igm-block', (localStorage.getItem('iToggle') == 'true') ? 'block' : 'none');
-      window.document.documentElement.style.setProperty('--igm-flex', (localStorage.getItem('iToggle') == 'true') ? 'flex' : 'none');
+    setTimeout(function() {
+      window.document.documentElement.style.setProperty('--igm-vis', (localStorage.getItem('iToggle') == 'true') ? 'visible' : 'hidden');
     }, 50);
   }
   else if (e.keyCode == mKey) {
-    setTimeout(function() { 
+    setTimeout(function() {
       window.document.documentElement.style.setProperty('--hud-block', (localStorage.getItem('hToggle') == 'true') ? 'block' : 'none');
-      window.document.documentElement.style.setProperty('--igm-block', (localStorage.getItem('iToggle') == 'true') ? 'block' : 'none');
-      window.document.documentElement.style.setProperty('--igm-flex', (localStorage.getItem('iToggle') == 'true') ? 'flex' : 'none');
+      window.document.documentElement.style.setProperty('--igm-vis', (localStorage.getItem('iToggle') == 'true') ? 'visible' : 'hidden');
     }, 50);
   }
 });
