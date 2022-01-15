@@ -1,6 +1,5 @@
 ﻿:root {
-  --igm-block: block; /* Default state */
-  --igm-flex: flex; /* Default state */
+  --igm-vis: visible; /* Default state for visible */
   --opacity: 0.8; /* Transparency */
   --scalefactor: 0.75; /* Size factor. 1 - no scale, 0.х - smaller */
   --data-scalefactor: 0.9; /* Size factor for data. 1 - no scale, 0.x - smaller */
@@ -49,12 +48,13 @@
  100% { background: var(--color); opacity: 0; }
 }
 igm-airtraffic-3d {
-  display: var(--igm-flex);
+  display: flex;
   font-family: Roboto; /* Change fontface */
   justify-content: space-around;
   width: calc(var(--scalefactor) * var(--screenHeight) * (450px / 2160));
   height: calc(var(--scalefactor) * var(--screenHeight) * (120px / 2160));
   opacity: var(--opacity);
+  visibility: var(--igm-vis);
 }
 igm-airtraffic-3d .name {
   padding: 0 0 0 0;

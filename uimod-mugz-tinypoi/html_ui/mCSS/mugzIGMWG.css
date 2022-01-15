@@ -1,18 +1,15 @@
 ﻿:root {
-  --igm-block: block;
-  --igm-flex: flex;
+  --igm-vis: visible;
 }
 igm-gate {
-  display: var(--igm-block);
-}
-igm-gate .Text {
-  display: var(--igm-flex);
+  visibility: var(--igm-vis);
 }
 igm-waypoint-2d {
-  display: var(--igm-block);
+  visibility: var(--igm-vis);
 }
 igm-waypoint-3d {
-  --totalHeight: calc(var(--screenHeight) * (105px / 1080));
+  --width: calc(var(--unscaledScreenHeight) * (500px / 1080) );
+  --totalHeight: calc(var(--screenHeight) * (100px / 1080));
   --iconsize: calc(var(--screenHeight) * (36px / 1080));
   --shadow-color: #424242AA; /*var(--backgroundColorPanel);*/
   --shadow: -1px -1px 0 var(--shadow-color),
@@ -23,17 +20,19 @@ igm-waypoint-3d {
      0    1px 0 var(--shadow-color),
     -1px  1px 0 var(--shadow-color),
     -1px  0   0 var(--shadow-color);
-  display: var(--igm-block);
+  visibility: var(--igm-vis);
 }
 igm-waypoint-3d .Infos {
-  font-size: calc(var(--screenHeight) * (18px / 1080));
+  font-size: calc(var(--screenHeight) * (14px / 1080));
   padding: calc(var(--screenHeight) * (1px / 1080));
+  height: 20%;
 }
 igm-waypoint-3d .Infos .Top {
   background-color: transparent;
 }
 igm-waypoint-3d .Infos .Top .Separator {
-  height: 40%;
+  width: calc(var(--unscaledScreenHeight) * (1px / 1080) );
+  height: 100%;
   box-shadow: var(--shadow);
   margin: 5px;
 }
@@ -43,20 +42,20 @@ igm-waypoint-3d .Infos .Top .Name {
   justify-content: flex-end;
 }
 igm-waypoint-3d .Infos .Top .Name p {
-  font-size: calc(var(--screenHeight) * (18px / 1080));
+  font-size: calc(var(--screenHeight) * (16px / 1080));
   text-shadow: var(--shadow);
 }
 igm-waypoint-3d .Infos .Top .Distance {
-  margin-left: none;
+  margin-left: calc(var(--unscaledScreenHeight) * (5px / 1080) );
   box-align: left;
   justify-content: flex-start;
 }
 igm-waypoint-3d .Infos .Top .Distance p {
-  font-size: calc(var(--screenHeight) * (18px / 1080));
+  font-size: calc(var(--screenHeight) * (14px / 1080));
   text-shadow: var(--shadow);
 }
 igm-waypoint-3d .Infos .Status {
-  font-size: calc(var(--screenHeight) * (18px / 1080));
+  font-size: calc(var(--screenHeight) * (14px / 1080));
   text-align: center;
 }
 igm-waypoint-3d .Icon {
