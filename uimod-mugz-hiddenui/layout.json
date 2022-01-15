@@ -21,19 +21,14 @@
       "date": 132767869204089038
     },
     {
-      "path": "html_ui/mJS/mugzReload.js",
-      "size": 252,
-      "date": 132542401478833728
-    },
-    {
       "path": "html_ui/mJS/mugzTB.js",
       "size": 223,
       "date": 132753530442686760
     },
     {
       "path": "html_ui/mJS/mugzUI.js",
-      "size": 2581,
-      "date": 132666263009919000
+      "size": 2191,
+      "date": 132867355195741238
     },
     {
       "path": "html_ui/Pages/InGameHud/InGameHud.html",
@@ -42,8 +37,8 @@
     },
     {
       "path": "html_ui/Pages/InGameMarkers/InGameMarkers.html",
-      "size": 1056,
-      "date": 132535710763420150
+      "size": 1063,
+      "date": 132867337735539292
     },
     {
       "path": "html_ui/Pages/Toolbar/ToolBar.html",
