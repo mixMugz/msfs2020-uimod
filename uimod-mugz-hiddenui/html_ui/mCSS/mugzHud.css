@@ -1,0 +1,30 @@
+﻿:root {
+  --hud-block: block;
+  --hud-scale: 60%;
+}
+
+#InGameHud {
+  display: var(--hud-block);
+}
+
+glasscockpit-hsi {
+  position: absolute;
+  width: var(--hud-scale);
+  top:  10%;
+  left: 0px;
+}
+
+analogic-power,
+digital-power {
+  position: absolute;
+  width: var(--hud-scale);
+  bottom: 0;
+}
+
+analogic-altimeter,
+digital-altimeter {
+  position: absolute;
+  width: var(--hud-scale);
+  bottom: 0;
+  right: 0;
+}
