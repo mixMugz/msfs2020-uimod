@@ -1,3 +1,28 @@
-﻿tool-bar .toolbar-handle.visible, tool-bar .toolbar-handle.active {
+﻿tool-bar .toolbar-handle {
+  padding-bottom: calc(var(--screenHeight) * (50px / 2160));
+}
+
+tool-bar .toolbar-handle.visible {
   opacity: 0; 
+}
+
+tool-bar .toolbar-handle.active {
+  opacity: 1;
+}
+
+tool-bar .toolbar-handle:after {
+  background-image: linear-gradient(to right, transparent, white, transparent);
+}
+
+tool-bar .toolbar-handle .toolbar-arrow {
+  transform: rotate(180deg);
+  top: 0;
+}
+
+tool-bar .toolbar-list {
+  justify-content: center;
+}
+
+tool-bar .toolbar-list > .separator {
+  display: none;
 }
