@@ -9,13 +9,13 @@
   "title": " [UIMOD] Additional Controls",
   "manufacturer": "",
   "creator": "Mugz",
-  "package_version": "1.12.13.0",
-  "minimum_game_version": "1.7.13",
+  "package_version": "1.35.21.0",
+  "minimum_game_version": "1.35.21",
   "release_notes": {
     "neutral": {
-      "LastUpdate": "VERSION 1.12.13.0 RELEASED DECEMBER 27, 2020\\n- Fixed for SimUpdate 2\\n- Added new device:\\n  + BU0836\\n  + BU0836X\\n  + Saitek Pro Flight Combat Rudder Pedals\\n  + Logitech Freedom 2.4\\n  + Logitech G940 Stick\\n  + Logitech G940 Throttle\\n  + Logitech G940 Pedals\\n  + Saitek AV8R Stick\\n  + CH Products Flight Sim Yoke\\n  + CH Products Pro Pedals",
-      "OlderHistory": "VERSION 1.11.6.0 RELEASED NOVEMBER 24, 2020\\n- Fixed for Patch 7"
+      "LastUpdate": "VERSION 1.35.21.1 RELEASED JANUARY 15, 2022\\n- Fixed for SimUpdate 14",
+      "OlderHistory": "VERSION 1.31.22.0 RELEASED MARCH 23, 2023\\n- Fixed for Sim Update 12 (SU12)\\nVERSION 1.15.7.0 RELEASED APRIL 14, 2021\\n- World Update 4 (France)\\n- Added new device:\\n  \u002B VPC Throttle 50CM3\\n  \u002B VPC Panel #1\\n  \u002B VPC Panel #2\\n- Changed PID for VPC devices\\nVERSION 1.13.16.0 RELEASED FEBURARY 17, 2021\\n- World Update 3 (UK)\\n- Added new device:\\n  \u002B VKB Gladiator NXT-R\\nVERSION 1.12.13.0 RELEASED DECEMBER 27, 2020\\n- Fixed for SimUpdate 2\\n- Added new device:\\n  \u002B BU0836\\n  \u002B BU0836X\\n  \u002B Saitek Pro Flight Combat Rudder Pedals\\n  \u002B Logitech Freedom 2.4\\n  \u002B Logitech G940 Stick\\n  \u002B Logitech G940 Throttle\\n  \u002B Logitech G940 Pedals\\n  \u002B Saitek AV8R Stick\\n  \u002B CH Products Flight Sim Yoke\\n  \u002B CH Products Pro Pedals\\nVERSION 1.11.6.0 RELEASED NOVEMBER 24, 2020\\n- Fixed for Patch 7"
     }
   },
-  "total_package_size": "00000000000016986057"
+  "total_package_size": "00000000000021905553"
 }

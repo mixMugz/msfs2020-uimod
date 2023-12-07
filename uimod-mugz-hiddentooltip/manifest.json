@@ -1,21 +1,21 @@
 {
   "dependencies": [
     {
-      "name": "fs-base-ui",
-      "package_version": "0.1.10"
+      "name": "fs-base-propdefs",
+      "package_version": "0.1.2"
     }
   ],
   "content_type": "CUSTOM",
-  "title": " [UIMOD] Hidden ToolTip",
+  "title": " [UIMOD] Hidden Tooltips",
   "manufacturer": "",
   "creator": "Mugz",
-  "package_version": "1.12.13.0",
-  "minimum_game_version": "1.7.13",
+  "package_version": "1.35.21.0",
+  "minimum_game_version": "1.35.21",
   "release_notes": {
     "neutral": {
-      "LastUpdate": "VERSION 1.12.13.0 RELEASED DECEMBER 27, 2020\\n- Fixed for SimUpdate 2\\n- Reworked function calls",
-      "OlderHistory": "VERSION 1.11.6.0 RELEASED NOVEMBER 24, 2020\\n- Fixed for Patch 7"
+      "LastUpdate": "VERSION 1.35.21.1 RELEASED JANUARY 15, 2022\\n- Fixed for SimUpdate 14",
+      "OlderHistory": "VERSION 1.31.22.0 RELEASED MARCH 23, 2023\\n- Updated for Sim Update 12 (SU12)\\nVERSION 1.13.16.0 RELEASED FEBURARY 17, 2021\\n- Updated for World Update 3 (UK)\\nVERSION 1.12.13.0 RELEASED DECEMBER 27, 2020\\n- Fixed for SimUpdate 2\\n- Reworked function calls\\nVERSION 1.11.6.0 RELEASED NOVEMBER 24, 2020\\n- Fixed for Patch 7"
     }
   },
-  "total_package_size": "00000000000000035167"
+  "total_package_size": "00000000000000036024"
 }

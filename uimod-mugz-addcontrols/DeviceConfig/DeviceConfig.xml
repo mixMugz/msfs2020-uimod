@@ -1,8 +1,12 @@
 <?xml version= "1.0" encoding= "utf-8" ?>
 <DeviceConfig>
 	<Device ProductId="0x1900" TextureFolder="H.Alpha Flight Control" />					<!-- Alpha Flight Controls -->
+	<Device ProductId="0x1904" DisplayName="Alpha Flight Controls XPC" TextureFolder="H.Alpha Flight Control XPC" /> <!-- Alpha Flight Controls Scarlett -->
+	<Device ProductId="0x1903" DisplayName="Charlie Pedals" TextureFolder="H.Charlie Pedals" />	<!-- Charlie Pedals -->
 	<Device ProductId="0x1901" TextureFolder="Bravo Throttle Quadrant" />					<!-- Bravo Throttle Quadrant-->
 	<Device ProductId="0x884B" TextureFolder="Logitech G513"					Priority="-10" />	<!-- Keyboard -->
+	<Device ProductId="0xB351" TextureFolder="MFD Cougar" />					<!-- MFD Cougar Left -->
+	<Device ProductId="0xB352" TextureFolder="MFD Cougar" />					<!-- MFD Cougar Right -->
 	<Device ProductId="0x378D" TextureFolder="Logitech G502 Hero"					Priority="-9" />	<!-- Mouse -->
 	<Device ProductId="0xC215" TextureFolder="Saitek Extreme 3D Pro Stick" />				<!-- Logitech Extreme 3D (NB: Saitek = Logitech) -->
 	<Device ProductId="0xA2AE" TextureFolder="Saitek Flight Instrument Panel" />			<!-- Saitek Flight Instrument Panel -->
@@ -19,9 +23,12 @@
 	<Device ProductId="0xB68F" TextureFolder="T-Pendular-Rudder" />							<!-- -Pendular-Rudder -->
 	<Device ProductId="0xB678" TextureFolder="T-Rudder" />									<!-- T.Flight Rudder Pedals -->
 	<Device ProductId="0xB679" TextureFolder="T-Rudder" />									<!-- T-Rudder -->
-	<Device ProductId="0xB10A" TextureFolder="T.16000M" />									<!-- T.16000M -->
+	<Device ProductId="0xB10A" TextureFolder="T.16000M" >									<!-- T.16000M -->
+		<!-- <ButtonTT buttonId="JOYSTICK RAXIS Z " TT="TEST" /> -->
+	</Device>
 	<Device ProductId="0xB67B" TextureFolder="T.Flight Hotas 4" />							<!-- T.Flight Hotas 4 -->
 	<Device ProductId="0xB68D" TextureFolder="T.Flight Hotas One" />						<!-- T.Flight Hotas One -->
+	<Device ProductId="0xB68C" DisplayName="T.Flight Hotas One" TextureFolder="T.Flight Hotas One Xbox" />						<!-- T.Flight Hotas One Scarlett-->
 	<Device ProductId="0xB108" TextureFolder="T.Flight Hotas X" />							<!-- T.Flight Hotas X -->
 	<Device ProductId="0xB106" TextureFolder="T.Flight Stick X" />							<!-- T.Flight Stick X -->
 	<Device ProductId="0x0402" TextureFolder="T.Hotas Warthog Joystick" />					<!-- T.Hotas Warthog Joystick -->
@@ -32,21 +39,63 @@
 	<Device ProductId="0x0DA2" TextureFolder="V.TQ6" />										<!-- VirtualFly - TQ6+ -->
 	<Device ProductId="0x0DA4" TextureFolder="V.V3rnio TPM" />								<!-- VF - TPM V3RNIO -->
 	<Device ProductId="0x0DA0" TextureFolder="V.Yoko The Yoke Plus" />						<!-- VirtualFly - YOKO+ -->
-	<Device ProductId="0x0001" TextureFolder="XInput Gamepad"			Priority="-1" />	<!-- XInput Gamepad -->
+	<Device ProductId="0x0001" TextureFolder="XInput Gamepad"			Priority="-1" >	<!-- XInput Gamepad -->
+		
+		<MergeIcons SourceIcons = "R-STICK LEFT&R-STICK RIGHT&R-STICK UP&R-STICK DOWN" TargetIcon="R-STICK_1" TargetTT="TT:INPUT.PAD_RIGHT_STICK"/>
+		<MergeIcons SourceIcons = "R-STICK X&R-STICK Y" TargetIcon="R-STICK_1"  TargetTT="TT:INPUT.PAD_RIGHT_STICK"/>
+		<MergeIcons SourceIcons = "R-STICK LEFT&R-STICK RIGHT" TargetIcon="R-STICK X"/>
+		<MergeIcons SourceIcons = "R-STICK UP&R-STICK DOWN" TargetIcon="R-STICK Y"/>
+		<MergeIcons SourceIcons = "L-STICK LEFT&L-STICK RIGHT&L-STICK UP&L-STICK DOWN" TargetIcon="L-STICK_1" TargetTT="TT:INPUT.PAD_LEFT_STICK"/>
+		<MergeIcons SourceIcons = "L-STICK LEFT&L-STICK RIGHT" TargetIcon="L-STICK X"/>
+		<MergeIcons SourceIcons = "L-STICK UP&L-STICK DOWN" TargetIcon="L-STICK Y"/>
+	
+	</Device>
 	<!-- Devices without images -->
 	<Device ProductId="0x4843" TextureFolder="Unknown Device" />							<!-- Custom DR400 cockpit, BU0836X Interface -->
 	<Device ProductId="0x3E20" TextureFolder="Unknown Device" />							<!-- Custom DR400 cockpit, BU0836X Interface -->
 	<!-- T.A320 -->
 	<Device ProductId="0x0405" TextureFolder="T.A320 Pilot" />								<!-- T.A320 Pilot (Left handed) -->
 	<Device ProductId="0x0406" TextureFolder="T.A320 Copilot" />							<!-- T.A320 Copilot (Right handed) -->
-	<Device ProductId="0x0407" TextureFolder="T.A320 Quadrant throttle" />					<!-- Airbus T-A320 Quadrant throttle -->
+	<Device ProductId="0x0407" TextureFolder="T.A320 Quadrant throttle" />					<!-- Airbus T-A320 Quadrant throttle standalone (TCA Q-ENG 1&2) -->
+	<Device ProductId="0x04FB" TextureFolder="T.A320 Quadrant throttle" />					<!-- Airbus T-A320 Quadrant throttle on copilot stick -->
+	<Device ProductId="0x04FC" TextureFolder="T.A320 Quadrant throttle" />					<!-- Airbus T-A320 Quadrant throttle on pilot stick -->
+	<Device ProductId="0x00CF" TextureFolder="HORI FlightStick" />							<!-- HORI FlightStick -->
+	<Device ProductId="0x0172" CompositeID="3" TextureFolder="HORI FlightStick" />							<!-- HORI FlightStick Series XS (PC)-->
+	<Device ProductId="0x016E" TextureFolder="HORI FlightStick" />							<!-- HORI FlightStick Series XS (Flight)-->
+	<Device ProductId="0x0001" CompositeID="2" TextureFolder="Yawman Arrow" />						<!-- Yawman Arrow -->
+	<!-- VelocityOne -->
+	<Device ProductId="0x7001" Platform="XBOX" DisplayName="VelocityOne Flight" TextureFolder="VelocityOne Flight FULL" />						<!-- VelocityOne Full on Scarlett, only yoke on PC -->
+	<Device ProductId="0x7001" Platform="PC" CompositeID="0" DisplayName="VelocityOne Flight Yoke" TextureFolder="VelocityOne Flight Yoke" />						<!-- VelocityOne Full on Scarlett, only yoke on PC -->
+	<Device ProductId="0x7001" Platform="PC" CompositeID="1" DisplayName="VelocityOne Flight Quadrant" TextureFolder="VelocityOne Flight Quadrant" />				<!-- VelocityOne Quadrant part for PC -->
+	<!--TCA Yoke & Quadrants Boeing -->
+	<Device ProductId="0x040C" Platform="XBOX" DisplayName="TCA Yoke Boeing" TextureFolder="TCA Yoke Boeing" />						<!-- TCA Yoke & Quadrants Boeing (Scarlett) -->
+	<Device ProductId="0x0410" Platform="XBOX" DisplayName="TCA Sidestick X CoPilot" TextureFolder="TCA Sidestick X CoPilot" />						<!-- TCA Sidestick X CoPilot (Scarlett) -->
+	<Device ProductId="0x040e" Platform="PC" DisplayName="TCA Sidestick X Pilot" TextureFolder="TCA Sidestick X CoPilot" />						<!-- TCA Sidestick X Pilot (PC) -->
+	<Device ProductId="0x040f" Platform="PC" DisplayName="TCA Sidestick X CoPilot" TextureFolder="TCA Sidestick X CoPilot" />						<!-- TCA Sidestick X CoPilot (PC) -->
+	<Device ProductId="0x7055" Platform="XBOX" 						DisplayName="VelocityOne FlightStick" 		TextureFolder="VelocityOne FlightStick" />									<!-- VelocityOne FlightStick on Scarlett-->
+	<Device ProductId="0x7055" Platform="PC" 						DisplayName="VelocityOne FlightStick" 		TextureFolder="VelocityOne FlightStick" />									<!-- VelocityOne FlightStick on PC-->
+	<Device ProductId="0x81E8" Platform="PC" 						DisplayName="Puma X" 						TextureFolder="Puma X" />													<!-- Puma X on Scarlett-->
 	<!-- Custom Added -->
 	<!-- TrackIR -->
 	<Device ProductId="0x%41X" TextureFolder="TrackIR" />
-	<!-- VPC -->
-	<Device ProductId="0x412C" TextureFolder="VPC Stick MT-50CM" />
-	<Device ProductId="0x8190" TextureFolder="VPC Throttle MT-50CM2" />
-	<Device ProductId="0x01F4" TextureFolder="VPC Rudder Pedals" />
+	<!-- VPC: 4xxx - Right side, 8xxx - Left side -->
+	<Device ProductId="0x4130" TextureFolder="VPC Stick MT-50CM2 CA" /> <!-- Concelation Alpha Grip -->
+	<Device ProductId="0x8130" TextureFolder="VPC Stick MT-50CM2 CA" /> <!-- Concelation Alpha Grip -->
+	<Device ProductId="0x4193" TextureFolder="VPC Throttle MT-50CM2" />
+	<Device ProductId="0x8193" TextureFolder="VPC Throttle MT-50CM2" />
+	<Device ProductId="0x4194" TextureFolder="VPC Throttle MT-50CM3" />
+	<Device ProductId="0x8194" TextureFolder="VPC Throttle MT-50CM3" />
+	<Device ProductId="0x4259" TextureFolder="VPC Control Panel 1" />
+	<Device ProductId="0x425A" TextureFolder="VPC Control Panel 1" />
+	<Device ProductId="0x8259" TextureFolder="VPC Control Panel 1" />
+	<Device ProductId="0x825A" TextureFolder="VPC Control Panel 1" />
+	<Device ProductId="0x425B" TextureFolder="VPC Control Panel 2" />
+	<Device ProductId="0x425C" TextureFolder="VPC Control Panel 2" />
+	<Device ProductId="0x825B" TextureFolder="VPC Control Panel 2" />
+	<Device ProductId="0x825C" TextureFolder="VPC Control Panel 2" />
+	<Device ProductId="0x425D" TextureFolder="VPC SharKa-50 Panel" />
+	<Device ProductId="0x825D" TextureFolder="VPC SharKa-50 Panel" />
+	<Device ProductId="0x01F8" TextureFolder="VPC Rudder Pedals ACE" />
 	<!-- MFG -->
 	<Device ProductId="0x0A38" TextureFolder="MFG Crosswind V2" />
         <!-- Saitek addition -->

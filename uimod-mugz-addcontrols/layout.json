@@ -7,8 +7,8 @@
     },
     {
       "path": "DeviceConfig/DeviceConfig.xml",
-      "size": 5406,
-      "date": 132534617416177338
+      "size": 10524,
+      "date": 133463620709357459
     },
     {
       "path": "html_ui/Textures/Menu/Control/BU0836/layout.png",
@@ -111,12 +111,27 @@
       "date": 132461169858231860
     },
     {
-      "path": "html_ui/Textures/Menu/Control/VPC Rudder Pedals/layout.png",
+      "path": "html_ui/Textures/Menu/Control/VKB Gladiator NXT-R/layout.png",
+      "size": 757718,
+      "date": 132537066368309652
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/VPC Control Panel 1/layout.png",
+      "size": 1437149,
+      "date": 132619439235600820
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/VPC Control Panel 2/layout.png",
+      "size": 1216455,
+      "date": 132619444042120367
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/VPC Rudder Pedals ACE/layout.png",
       "size": 978876,
       "date": 132461418905942276
     },
     {
-      "path": "html_ui/Textures/Menu/Control/VPC Stick MT-50CM/layout.png",
+      "path": "html_ui/Textures/Menu/Control/VPC Stick MT-50CM2 CA/layout.png",
       "size": 853781,
       "date": 132461315034364471
     },
@@ -124,6 +139,11 @@
       "path": "html_ui/Textures/Menu/Control/VPC Throttle MT-50CM2/layout.png",
       "size": 1301065,
       "date": 132461300396864605
+    },
+    {
+      "path": "html_ui/Textures/Menu/Control/VPC Throttle MT-50CM3/layout.png",
+      "size": 1501928,
+      "date": 132619438598727973
     }
   ]
 }

@@ -1,4 +1,4 @@
->Tested and work perfect with v.1.21.18.1 (SimUpdate 7 Patch)
+>Tested and work perfect with v.1.35.21.0 (SimUpdate 14 Patch)
 
 <h4 align="center">
   <img alt="MSFS2020" src="logo.png">
@@ -16,8 +16,8 @@
 
 ## About MOD's
 
-1. **TEMPORARY NOT WORKING!!!** ~~**uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.~~
-2. **TEMPORARY NOT WORKING!!!** ~~**uimod-mugz-hiddentooltip**: This mod turns off all hover tooltips by default, but makes it possible to turn them ON if desired. It is enough to hold down the "ALT" key when you hover. Also, the size of the tooltips themselves has been reduced and transparency has been added (For correct operation, you must enable Show tooltip in the game).~~
+1. **uimod-mugz-addcontrols**: This mod adds missing device images to the interface and shows how you can change the image of an existing device. For example, the pictures of the keyboard and mouse have been changed. Within the framework of the project, i can collect a list of all known devices. To do this, all what i need a PID device and its image in transparent PNG format with a resolution of 1200x1200.
+2. **uimod-mugz-hiddentooltip**: This mod turns off all hover tooltips by default, but makes it possible to turn them ON if desired. It is enough to hold down the "ALT" key when you hover. Also, the size of the tooltips themselves has been reduced and transparency has been added (For correct operation, you must enable Show tooltip in the game).
 3. **uimod-mugz-hiddenui**: This CORE mod add ability to toggle in game UI ellement (such POI/Waypoints/Gates/HUD/Nameplates, if they are enabled) on the fly by pressing one button. By default it's `BackSpace` key. For correct operation, you must install my other mod for every desired UI element. Also use F12 or NumLock key for separately toggle IngameMarkers or Hud.
 4. **uimod-mugz-tinyplates**: This is tiny nameplates to replace the default monstrous ones. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).
 5. **uimod-mugz-tinypoi**: This is tiny POI/City/Airport nameplates. Smaller text/icon and removed Black background. In addition, added functionality to turn it on/off on the fly (Required: *uimod-mugz-hiddenui* mod).
@@ -29,6 +29,9 @@
 ## Installation
 
 Just download from [release](https://github.com/mixMugz/msfs2020-uimod/releases) page archive pack and install what you need to `Community` folder.
+For **uimod-mugz-addcontrols** and **uimod-mugz-hiddentooltip** you need additional steps to install:
+- **uimod-mugz-addcontrols** just copy and overwrite file .\DeviceConfig\DeviceConfig.xml to <GAME_EXEC_DIR>\Packages\fs-base-ui\DeviceConfig\DeviceConfig.xml
+- **uimod-mugz-hiddentooltip** just copy and overwrite file .\html_ui\Templates\actionsTooltip\actionsTooltip.html to <GAME_EXEC_DIR>\Packages\fs-base-ui\\html_ui\Templates\actionsTooltip\actionsTooltip.html (The addon itself does not need to be enabled.)
 
 ## Removal
 

@@ -1,0 +1,66 @@
+﻿<link rel="stylesheet" href="./actionsTooltip.css" />
+
+<script type="text/html" id="ActionsTooltipLineTemplate">
+    <div class="actionLineIconBloc actions-tooltip-line__icon">
+        <div class="actions-tooltip-line__wrapper">
+            <icon-element class="actionToooltipLineIcon"></icon-element>
+        </div>
+    </div>
+    <div class="actions-tooltip-line__content">
+        <div class="actions-tooltip-line__description">
+            <p class="actionLineDescriptionText paragraph-with-buttons"></p>
+        </div>
+        <div class="actionLineActionBloc actions-tooltip-line__action">
+            <p class="actionLineActionText paragraph-with-buttons"></p>
+        </div>
+    </div>
+    <div class="actionLineStateBloc actions-tooltip-line__state">
+        <div class="actions-tooltip-line__wrapper">
+            <p class="actionLineStateText"></p>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="ActionsTooltipTemplate">
+    <div class="actions-tooltip__name">
+        <div class="actions-tooltip__wrapper">
+            <p class="actionsTooltipName"></p>
+        </div>
+    </div>
+    <div class="actions-tooltip__line-container"></div>
+</script>
+
+<script type="text/html" id="NotificationTooltipTemplate" is-transparent>
+    <div class="notification-tooltip__name">
+        <div class="notification-tooltip__wrapper">
+            <p class="notificationTooltipName"></p>
+        </div>
+    </div>
+</script>
+
+
+<script type="text/javascript" src="./actionsTooltip.js"></script>
+
+
+<style>
+  :root {
+    --tips-vis: hidden;
+  }
+  actions-tooltip, notification-tooltip {
+    visibility: var(--tips-vis);
+    transform: scale(0.5);
+  }
+</style>
+<script type="text/javascript">
+  var tipsKey = 18;
+  window.document.addEventListener("keydown", function (e) {
+    if (e.keyCode == tipsKey) {
+      window.document.documentElement.style.setProperty('--tips-vis', 'visible');
+    }
+  });
+  window.document.addEventListener("keyup", function (e) {
+    if (e.keyCode == tipsKey) {
+      window.document.documentElement.style.setProperty('--tips-vis', 'hidden');
+    }
+  });
+</script>

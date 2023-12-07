@@ -7,3 +7,13 @@ worldmap-location-info .Infos .Name {
   font-weight: normal; /* bold; */
   line-height: normal; /* 0.85; */
 }
+worldmap-location-info.Over .shadow {
+  --outlineOffset: calc((-1 * var(--outlineWidth)) * 0.5);
+  --outlineBorder: calc(var(--outlineWidth)*0.3)
+}
+worldmap-location-info.Over .shadow:before {
+  border: var(--outlineBorder) solid var(--enabledHoverBackgroundColor);
+}
+image-button {
+  visibility: hidden;
+}

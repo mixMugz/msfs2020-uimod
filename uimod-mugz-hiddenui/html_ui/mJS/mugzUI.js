@@ -11,13 +11,13 @@ if (localStorage.getItem('hToggle') === null) localStorage.setItem('hToggle', 't
 if (localStorage.getItem('iToggle') === null) localStorage.setItem('iToggle', 'true');
 if (localStorage.getItem('mToggle') === null) localStorage.setItem('mToggle', 'true');
 
-window.document.documentElement.style.setProperty('--hud-block', (localStorage.getItem('hToggle') == 'true') ? 'block' : 'none');
+window.document.documentElement.style.setProperty('--hud-vis', (localStorage.getItem('hToggle') == 'true') ? 'visible' : 'hidden');
 window.document.documentElement.style.setProperty('--igm-vis', (localStorage.getItem('iToggle') == 'true') ? 'visible' : 'hidden');
 
 window.document.addEventListener("keyup", function (e) {
   if (e.keyCode == hKey) {
     setTimeout(function() {
-      window.document.documentElement.style.setProperty('--hud-block', (localStorage.getItem('hToggle') == 'true') ? 'block' : 'none');
+      window.document.documentElement.style.setProperty('--hud-vis', (localStorage.getItem('hToggle') == 'true') ? 'visible' : 'hidden');
     }, 50);
   }
   else if (e.keyCode == iKey) {
@@ -27,7 +27,7 @@ window.document.addEventListener("keyup", function (e) {
   }
   else if (e.keyCode == mKey) {
     setTimeout(function() {
-      window.document.documentElement.style.setProperty('--hud-block', (localStorage.getItem('hToggle') == 'true') ? 'block' : 'none');
+      window.document.documentElement.style.setProperty('--hud-vis', (localStorage.getItem('hToggle') == 'true') ? 'visible' : 'hidden');
       window.document.documentElement.style.setProperty('--igm-vis', (localStorage.getItem('iToggle') == 'true') ? 'visible' : 'hidden');
     }, 50);
   }
